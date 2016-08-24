@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article_categorie extends Model
 {
-    //
+    public $table = 'articles_categories';
 }

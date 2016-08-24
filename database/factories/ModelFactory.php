@@ -69,7 +69,7 @@ $factory->define(App\Article::class, function (Faker\Generator $faker) {
     $status = ['published', 'unpublished'];
     return [
         'titre' => $faker->name,
-        'description' => $faker->paragraphs,
+        'description' => $faker->paragraph(),
         'content' => $faker->text,
         'adresse' => $faker->address,
         'status' => $status[rand(0,1)],
