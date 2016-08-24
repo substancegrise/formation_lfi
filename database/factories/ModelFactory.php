@@ -27,15 +27,76 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(App\Media::class, function (Faker\Generator $faker) {
 
 
-    $titles = array('Apero wodpress', 'Apero php', 'Apero jQuery', 'Apero laravel', 'Apero mobile');
-    $type = ['video', 'image', 'pdf'];
-
     return [
-        'title' => $titles[rand(0,4)],
-        'date_event' => $faker->dateTimeBetween($startDate= 'now', $endDate='+1 years'),
-        'abstract' => $faker->paragraph(),
-        'status' => $type[rand(0,2)],
-        'content' => $faker->text(),
+        'titre' => $faker->name,
     ];
 });
 
+$factory->define(App\Formation::class, function (Faker\Generator $faker) {
+
+
+
+    return [
+        'titre' => $faker->name,
+        'presentation' => $faker->paragraphs,
+        'debut' => $faker->dateTimeBetween($startDate= 'now', $endDate='+1 years'),
+        'fin' => $faker->dateTimeBetween($startDate= '+1 years', $endDate='+2 years'),
+
+    ];
+});
+
+$factory->define(App\Formation_categorie::class, function (Faker\Generator $faker) {
+
+    $titre = array('Chargé de production', 'Régisseur de production', 'Production de musique electronique', 'technicien de plateau');
+    return [
+        'titre' =>$titre[rand(0,3)],
+        'description' => $faker->paragraph(),
+    ];
+});
+
+$factory->define(App\Formation_type::class, function (Faker\Generator $faker) {
+
+    $titre = array('formation longue', 'formation courte', 'formation module', 'formation presentiel');
+    return [
+        'titre' =>$titre[rand(0,3)],
+
+    ];
+});
+
+$factory->define(App\Article::class, function (Faker\Generator $faker) {
+
+
+    $status = ['published', 'unpublished'];
+    return [
+        'titre' => $faker->name,
+        'description' => $faker->paragraphs,
+        'content' => $faker->text,
+        'adresse' => $faker->address,
+        'status' => $status[rand(0,1)],
+        'date_event' => $faker->dateTimeBetween($startDate= 'now', $endDate='+1 years'),
+
+
+    ];
+});
+
+$factory->define(App\Article_categorie::class, function (Faker\Generator $faker) {
+
+    $titre = array('formation', 'evenement', 'Trema', 'autre');
+    return [
+        'titre' =>$titre[rand(0,3)],
+    ];
+});
+
+$factory->define(App\Temoignage::class, function (Faker\Generator $faker) {
+
+    $color = ['red', 'black'];
+
+    return [
+        'nom' => $faker->name,
+        'titre' => $faker->paragraphs,
+        'fonction' => $faker->company,
+        'texte' => $faker->text,
+        'color' => $color[rand(0,1)],
+
+    ];
+});

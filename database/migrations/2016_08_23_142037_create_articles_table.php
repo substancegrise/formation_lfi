@@ -14,10 +14,11 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title', 100);
+            $table->string('titre', 100);
             $table->text('description',255)->nullable();
             $table->text('content');
             $table->string('adresse',100)->nullable();
+            $table->dateTime('date_event');
 
             $table->enum('status', ['published', 'unpublished'])->default('unpublished');
 
