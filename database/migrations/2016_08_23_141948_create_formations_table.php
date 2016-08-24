@@ -15,17 +15,28 @@ class CreateFormationsTable extends Migration
         Schema::create('formations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titre',100);
-            $table->string('description', 255);
+            $table->string('presentation');
             $table->date('debut');
             $table->date('fin');
-            $table->unsignedInteger('event_id');
+
             $table->timestamps();
 
-
-            $table->foreign('event_id')
+            $table->unsignedInteger('media_id');
+            $table->foreign('media_id')
                 ->references('id')
-                ->on('events')
+                ->on('medias')
                 ->onDelete('CASCADE');
+
+            $table->unsignedInteger('formation_categorie_id');
+            $table->foreign('formation_categorie_id')
+                ->references('id')
+                ->on('formations_categories');
+
+            $table->unsignedInteger('formation_type_id');
+            $table->foreign('formation_type_id')
+                ->references('id')
+                ->on('formations_types');
+
         });
     }
 

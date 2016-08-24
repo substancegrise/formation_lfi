@@ -3,7 +3,7 @@
 GULP='yes'
 USERNAME='root'
 PASSWORD='root'
-DBNAME='db_apero'
+DBNAME='db_lfi'
 HOST='localhost'
 
 USER_USERNAME='christian'

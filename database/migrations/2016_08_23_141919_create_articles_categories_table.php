@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFormationsTypesTable extends Migration
+class CreateArticlesCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,15 +12,11 @@ class CreateFormationsTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('formations_types', function (Blueprint $table) {
+        Schema::create('articles_categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titre',50);
-            $table->unsignedInteger('formation_id');
             $table->timestamps();
 
-            $table->foreign('formation_id')
-                ->references('id')
-                ->on('formations');
         });
     }
 
@@ -31,6 +27,6 @@ class CreateFormationsTypesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('formations_types');
+        Schema::drop('articles_categories');
     }
 }

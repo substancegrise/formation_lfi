@@ -15,13 +15,10 @@ class CreateFormationsCategoriesTable extends Migration
         Schema::create('formations_categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titre',50);
-            $table->string('description');
-            $table->unsignedInteger('formation_type_id');
+            $table->string('description')->nullable();
             $table->timestamps();
 
-            $table->foreign('formation_type_id')
-                ->references('id')
-                ->on('formations_types');
+
         });
     }
 

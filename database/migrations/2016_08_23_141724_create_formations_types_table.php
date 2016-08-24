@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePagesTypesTable extends Migration
+class CreateFormationsTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,12 @@ class CreatePagesTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('pages_types', function (Blueprint $table) {
+        Schema::create('formations_types', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titre', 100);
-            $table->string('description');
+            $table->string('titre',50);
             $table->timestamps();
+
+
         });
     }
 
@@ -27,6 +28,6 @@ class CreatePagesTypesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('pages_types');
+        Schema::drop('formations_types');
     }
 }
