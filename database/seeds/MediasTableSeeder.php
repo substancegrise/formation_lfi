@@ -8,7 +8,10 @@ class MediasTableSeeder extends Seeder
      * Run the database seeds.
      *
      * @return void
+     *
+     *
      */
+
     public function run()
     {
         factory(App\Media::class, 10)->create()->each(function ($media)  {

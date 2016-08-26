@@ -9,15 +9,11 @@ class ArticlesTableSeeder extends Seeder
      *
      * @return void
      */
+
+
     public function run()
     {
-        factory(App\Article::class, 10)->create()->each(function ($article)  {
-
-            $article->article_categorie_id = rand(1,9);
-            $article->media_id = rand(1,9);
-
-            $article->save(); // persist
-        });
+        factory(App\Article::class, 10)->create();
     }
 }
 

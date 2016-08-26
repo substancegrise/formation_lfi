@@ -74,6 +74,8 @@ $factory->define(App\Article::class, function (Faker\Generator $faker) {
         'adresse' => $faker->address,
         'status' => $status[rand(0,1)],
         'date_event' => $faker->dateTimeBetween($startDate= 'now', $endDate='+1 years'),
+        'media_id'=> rand(1,9),
+        'article_categorie_id' => rand(1,9),
 
 
     ];
@@ -97,6 +99,7 @@ $factory->define(App\Temoignage::class, function (Faker\Generator $faker) {
         'fonction' => $faker->company,
         'texte' => $faker->text,
         'color' => $color[rand(0,1)],
+
 
     ];
 });

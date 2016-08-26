@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::any('login', 'LoginController@login');
+
+Route::any('logout', 'LoginController@logout');
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+
+
+    Route::resource('article', 'ArticleController');
+    Route::resource('publish', 'PublishController');
+
+
+});
