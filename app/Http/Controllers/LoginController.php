@@ -14,20 +14,20 @@ class LoginController extends Controller
         if ($request->isMethod('post')) {
 
             $this->validate($request, [
-                'username' => 'required',
+                'name' => 'required',
                 'password' => 'required'
             ]);
 
-            $credentials = $request->only('username', 'password');
+            $credentials = $request->only('name', 'password');
 
 
             if (Auth::attempt($credentials)) {
 
-                return redirect('admin/article')->with(['message' => 'success']);
+                return redirect('admin/index')->with(['message' => 'success']);
 
             } else {
                 return back()
-                    ->withInput($request->only('username'))
+                    ->withInput($request->only('name'))
                     ->with(['message' => 'ce ne sont pas les bons !!!']);
             }
         }

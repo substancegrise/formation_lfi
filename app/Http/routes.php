@@ -22,7 +22,7 @@ Route::any('logout', 'LoginController@logout');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
-
+    Route::resource('index', 'BackController@index');
     Route::resource('article', 'ArticleController');
     Route::resource('publish', 'PublishController');
 

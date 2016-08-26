@@ -3,9 +3,9 @@
 @section('content')
     <form action="{{url('login')}}" method="post">
         {{csrf_field()}}
-        <p><label for="username">Username</label>
-            <input type="text" name="username" value="{{old('username')}}">
-            @if($errors->has('username')) <span>{{$erros->first('username')}}</span>@endif
+        <p><label for="name">Username</label>
+            <input type="text" name="name" value="{{old('name')}}">
+            @if($errors->has('name')) <span>{{$erros->first('name')}}</span>@endif
         </p>
         <p><label for="password">Password</label>
             <input type="password" name="password">
