@@ -25,40 +25,43 @@
             <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                    <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-home"></i> Accueil <span class=""></span></a>
                         <ul class="nav child_menu">
                             <li><a href="index.html">Dashboard</a></li>
                             <li><a href="index2.html">Dashboard2</a></li>
                             <li><a href="index3.html">Dashboard3</a></li>
                         </ul>
                     </li>
-                    <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-edit"></i> Formations <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="form.html">General Form</a></li>
-                            <li><a href="form_advanced.html">Advanced Components</a></li>
-                            <li><a href="form_validation.html">Form Validation</a></li>
-                            <li><a href="form_wizards.html">Form Wizard</a></li>
-                            <li><a href="form_upload.html">Form Upload</a></li>
-                            <li><a href="form_buttons.html">Form Buttons</a></li>
+                            <li><a href="form.html">Alternances</a></li>
+                            <li><a href="form_advanced.html">Longues</a></li>
+                            <li><a href="form_validation.html">Courtes</a></li>
+                            <li><a href="form_wizards.html">Modules</a></li>
+                            <li><a href="form_upload.html">Présentiels</a></li>
+                            <li><a href="form_buttons.html">E-learning</a></li>
                         </ul>
                     </li>
-                    <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-desktop"></i>Pages<span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="general_elements.html">General Elements</a></li>
-                            <li><a href="media_gallery.html">Media Gallery</a></li>
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="icons.html">Icons</a></li>
-                            <li><a href="glyphicons.html">Glyphicons</a></li>
-                            <li><a href="widgets.html">Widgets</a></li>
-                            <li><a href="invoice.html">Invoice</a></li>
-                            <li><a href="inbox.html">Inbox</a></li>
-                            <li><a href="calendar.html">Calendar</a></li>
+                            <li><a href="general_elements.html">Présentation</a></li>
+                            <li><a href="media_gallery.html">Projet Tréma</a></li>
+                            <li><a href="typography.html">Page Contact</a></li>
+                            <li><a href="icons.html">Page 1</a></li>
+                            <li><a href="glyphicons.html">Page 2</a></li>
+                            <li><a href="widgets.html">Page 3</a></li>
+                            <li><a href="invoice.html">Page 4</a></li>
+                            <li><a href="inbox.html">Page 5</a></li>
+                            <li><a href="calendar.html">Page 6</a></li>
                         </ul>
                     </li>
-                    <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-table"></i> Articles <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="tables.html">Tables</a></li>
-                            <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                            <li><a href="{{url('admin/article')}}">Tous</a></li>
+                            <li><a href="tables_dynamic.html">Formations</a></li>
+                            <li><a href="tables_dynamic.html"> Evenements</a></li>
+                            <li><a href="tables_dynamic.html"> Tréma</a></li>
+                            <li><a href="tables_dynamic.html"> Autres</a></li>
                         </ul>
                     </li>
                     <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>

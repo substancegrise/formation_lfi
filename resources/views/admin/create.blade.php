@@ -13,10 +13,18 @@
 
     <!-- page content -->
     <div class="right_col" role="main">
+        <!-- page -->
 
+
+
+
+
+
+
+
+        <!-- /page -->
     </div>
-    <!-- /page content -->
-
+        <!-- /page content -->
 
     <!-- footer content -->
     <footer>
@@ -27,4 +35,3 @@
     </footer>
     <!-- /footer content -->
 @endsection
-
