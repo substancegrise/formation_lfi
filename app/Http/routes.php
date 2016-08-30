@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/', 'FrontController@index');
 
 
 Route::any('login', 'LoginController@login');
@@ -23,11 +25,7 @@ Route::any('logout', 'LoginController@logout');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
-    Route::resource('index', 'BackController@index');
     Route::resource('article', 'ArticleController');
-    Route::resource('edit', 'ArticleController@edit');
-    Route::resource('create', 'ArticleController@create');
-    Route::resource('publish', 'PublishController');
 
 
 });

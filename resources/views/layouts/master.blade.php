@@ -34,7 +34,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active">  @if(Auth::check())
                                 <a href="{{url('logout')}}">LOGOUT</a>
-                        <li><a href="{{route('admin.apero.index')}}">APERO CRUD</a></li>
+                        <li><a href="{{url('admin/index')}}">APERO CRUD</a></li>
                         @else
                             <a href="{{URL('login')}}">LOGIN</a>
                             @endif</a></li>
@@ -45,7 +45,7 @@
         </nav>
         <div class="row">
         <section class="col-md-8">
-            @yield('content')
+            @yield('main_container')
         </section>
         <aside class="col-md-4">
 

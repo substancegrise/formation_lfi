@@ -57,7 +57,7 @@
                     </li>
                     <li><a><i class="fa fa-table"></i> Articles <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="{{url('admin/article')}}">Tous</a></li>
+                            <li><a href="{{route('admin.article.index')}}">Tous</a></li>
                             <li><a href="tables_dynamic.html">Formations</a></li>
                             <li><a href="tables_dynamic.html"> Evenements</a></li>
                             <li><a href="tables_dynamic.html"> Tréma</a></li>

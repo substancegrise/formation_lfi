@@ -17,6 +17,11 @@ class Article extends Model
         return $this->belongsTo('App\Category');
     }
 
+    public function media()
+    {
+        return $this->belongsTo('App\Media');
+    }
+
     public function getDateEventAttribute($value)
     {
         return Carbon::parse($value)->format('d-m-Y-h:i');
@@ -45,5 +50,7 @@ class Article extends Model
 
         return $query->where('date_event', '>', $now);
     }
+
+
 
 }

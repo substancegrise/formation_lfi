@@ -62,24 +62,26 @@
 
                                         @foreach($articles as $article)
 
-                                            <td><a href="{{url('admin/edit', [$article->id])}}">{{$article->titre}}</a></td>
+                                            <td><a href="{{route('admin.article.edit', [$article->id])}}">{{$article->titre}}</a></td>
 
-                                            <td><a href="{{url('admin/edit', [$article->id])}}">{{$article->article_categorie_id}}</a></td>
+                                            <td><a href="{{route('admin.article.edit', [$article->id])}}">{{$article->article_categorie_id}}</a></td>
 
                                             <td>{{$article->created_at}}</td>
                                             <td>{{$article->date_event}}</td>
+
                                             <td>
-                                                <a href="{{url('admin/edit', [$article->id])}}"><input type="submit" class="btn btn-dark" value="edit"></a>
+                                                <a href="{{route('admin.article.edit', [$article->id])}}"><input class="btn btn-dark" type="submit"  value="edit"></a>
                                             </td>
+
                                             <td>
-                                                <form class="delete" action="{{url('admin/destroy',[$article->id])}}" method="post">
+                                                <form class="delete" action="{{route('admin.article.destroy',[$article->id])}}" method="post">
                                                     {{method_field('DELETE')}}
                                                     {{csrf_field()}}
                                                     <input type="submit" class="btn btn-danger" value="supprimer"></form>
                                             </td>
 
                                             <td>
-                                                <form action="{{url('admin.publish.update', [$article->id])}}" method="post">
+                                                <form action="{{route('admin.article.update', [$article->id])}}" method="post">
                                                     {{csrf_field()}}
                                                     {{method_field('PUT')}}
 
@@ -114,33 +116,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-                        <!-- Bouton et ligne  -->
-                        <div class="ln_solid"></div>
-                        <div class="form-group">
-                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                <button type="submit" class="btn btn-primary">Cancel</button>
-                                <button type="submit" class="btn btn-success">Submit</button>
-                            </div>
-                        </div>
-                        <!-- /Bouton et ligne  -->
-
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
 
 
         <!-- /page -->

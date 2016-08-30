@@ -7,4 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Media extends Model
 {
     public $table = 'medias';
+
+    public function article()
+    {
+        return $this->hasOne('App\Article');
+    }
+
 }
