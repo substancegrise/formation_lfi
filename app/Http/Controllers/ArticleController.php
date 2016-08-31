@@ -167,21 +167,28 @@ class ArticleController extends Controller
 
     private function createImage(Request $request,$article)
     {
-        if (!is_null($request->picture)) {
+        if (!is_null($request->picture) || !is_null($request->picture2)) {
 
 
             $img = $request->picture;
+            $img2 = $request->picture2;
 
             $ext = $img->getClientOriginalExtension();
+            $ext2 = $img2->getClientOriginalExtension();
 
 
             $fileName = md5(uniqid(rand(), true)) . ".$ext";
+            $fileName2 = md5(uniqid(rand(), true)) . ".$ext2";
 
             $img->move(env('UPLOADS'), $fileName);
+            $img2->move(env('UPLOADS'), $fileName2);
 
             $article->uri = $fileName;
 
+            $article->media->uri = $fileName2;
+
             $article->save();
+
 
         }
 

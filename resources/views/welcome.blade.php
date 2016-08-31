@@ -5,64 +5,61 @@
 
     <!-- page content -->
 
-    <div>
-    @if(!empty($articles))
-        <div xmlns="http://www.w3.org/1999/html">
-            <hr class="featurette-divider">
-            @foreach($articles as $article)
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <a href="{{url('article', $article->id)}}"><h2 class="featurette-heading">{{$article->titre}}</h2></a>
-                        <p class="lead">{{$article->description}}</p>
-
-                        @foreach($categories as $categorie)
-                            @if($categorie->id == $article->article_categorie_id)
-                                <a href="{{url('categorie', $categorie->id)}}">{{$categorie->titre}}</a>
-                            @endif
-                        @endforeach
-                        {{$article->date_event}}
-
-                        <a class="btn btn-default" href="{{url('article', $article->id)}}">lire la suite</a>
-                    </div>
-
-
-                    <div class="col-md-5">
-                        @if(count($article->uri)>0)
-                            <img class="featurette-image img-responsive" src="{{url('assets',['images', $article->uri])}}"/>
-                        @endif
-                    </div>
-
-
-                    <div class="col-md-5">
-                        @if(count($article->media)>0)
-                        <img class="featurette-image img-responsive" src="{{url('assets',['images', $article->media->uri])}}"/>
-                        @endif
-                    </div>
-                </div>
-            @endforeach
-
-
-
-            @else
-                <p>Aucun article</p>
-            @endif
+    <section id="slider">
+        <div>
+            <p><a href="">[ ESPACE ENTREPRISE ]</a></p>
+            <img src="">
+            <img src="">
         </div>
-
-    </div>
-
-        <!-- /page content -->
-
-
-
-
-
-    <!-- footer content -->
-    <footer>
-        <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+        <div>
+            <h1>SE FORMER AU METIER DES MUSIQUES ACTUELLES</h1>
         </div>
-        <div class="clearfix"></div>
-    </footer>
-    <!-- /footer content -->
+        <div>
+            <p>DECOUVRIR</p>
+        </div>
+    </section>
+    <section id="formations">
+        <div>
+            <h2>NOS<br>FORMATIONS</h2>
+            <p>Depuis 1989 LFI développe une activité exclusive de formation aux métiers des Musiques Actuelles et propose notamment des formations certifiantes
+                (chargé de production, régisseur de production),  </p>
+            <p>une formation de backliner et des formations professionnalisantes…<a href="">[Lire la suite]</a></p>
+        </div>
+        <div>
+            <img src="">
+        </div>
+        <div>
+            <p>PLUS DE DETAIL</p>
+        </div>
+    </section>
+    <section id="trema">
+        <div>
+        <h2>LE<br>TREMA LAB</h2>
+            <h3>TRAVAIL ET MUSIQUES ACTUELLES</h3>
+            <img src="">
+        </div>
+        <div>
+            <p>Un projet pédagogique ambitieux</p>
+            <p>L’analyse du travail réel en vue de la formation nous impose de relier les moda-lités de formation aux usages professionnels qui en seront faits :
+                la digitalisation des ressources de formation se veut une réponse aux usages et besoins </p>
+            <p>du travail nomade, asynchrone et collaboratif devenu ordinaire dans le monde de travail, notamment dans le milieu des musiques actuelles marqué par la prédominance massive des TPE de moins de 5 salariés et du travail en mode projet.</p>
+        </div>
+        <div>
+            <p>PLUS DE DETAIL</p>
+        </div>
+    </section>
+    <section id="actus">
+        <h2>ACTUALITES / AGENDA / EVENEMENT</h2>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- /page content -->
 @endsection
 

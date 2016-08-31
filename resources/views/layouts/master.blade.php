@@ -1,59 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>LOGIN LFI</title>
-    <link rel="stylesheet" href="{{url('assets/css/bootstrap.min.css')}}">
+    <!--Information pour le navigateur-->
+    <meta charset="utf-8" />
+    <title>Les formations d'isoudun</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!--// FONT -->
+
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="" media="print">
+    <!--FICHIER JS -->
 </head>
-
 <body>
-<div class="container">
+<div class="site_pusher">
     <header>
-        <h2>LOGIN LFI</h2>
-
-
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                            aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="{{url('/')}}">MENU 1</a></li>
-                        <li><a href="{{url('search')}}">MENU 2</a></li>
-                        <li><a href="{{url('create')}}">MENU 3</a></li>
-
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active">  @if(Auth::check())
-                                <a href="{{url('logout')}}">LOGOUT</a>
-                        <li><a href="{{url('admin/index')}}">APERO CRUD</a></li>
-                        @else
-                            <a href="{{URL('login')}}">LOGIN</a>
-                            @endif</a></li>
-
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div><!--/.container-fluid -->
-        </nav>
-        <div class="row">
-        <section class="col-md-8">
-            @yield('main_container')
-        </section>
-        <aside class="col-md-4">
-
-        </aside>
-</div>
-
+        <div>
+            <a class="header_icon" id="" href=""></a>
+            <img id="logo" src="">
+            <menu id="mymenu">
+                <ul>
+                    <li><a href="index.html">PRESENTATION</a></li>
+                    <li><a href="#">FORMATIONS</a></li>
+                    <li><a href="#">TrEMA LAB</a></li>
+                    <li><a href="price.html">ACTUALITE</a></li>
+                </ul>
+            </menu>
+        </div>
     </header>
+            @yield('main_container')
+    <footer>
+        <div class="content">
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="#">L'ECOLE</a></li>
+                        <li><a href="#">L'ECOLE</a></li>
+                        <li><a href="#">LE TrEMA LAB</a></li>
+                        <li><a href="#">AGENDA</a></li>
+                        <li><a href="#">ACTUALITES</a></li>
+                        <li><a href="#">CARTOGRAPHIE DES METIER</a></li>
+                    </ul>
+                </nav>
+            </section><!--
+            --><section>
+                <nav>
+                    <ul>
+                        <li><a href="#">FORMATIONS</a></li>
+                        <li><a href="#">•LONGUES</a></li>
+                        <li><a href="#">•COURTES</a></li>
+                        <li><a href="#">•EN CONTINUE</a></li>
+                        <li><a href="#">•MODULES A LA CARTE</a></li>
+                        <li><a href="#">ESPACE ENTREPRISE</a></li>
+                    </ul>
+                </nav>
+            </section><!--
+            --><section>
+                <nav>
+                    <ul>
+                        <li><a href="#">NEWSLETTER</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">PLAN DU SITE</a></li>
+                        <li><a href="#">GOOGLE MAP</a></li>
 
-
+                    </ul>
+                </nav>
+            </section><!--
+            --><section>
+                <p>LES FORMATIONS D'ISSOUDUN<br>
+                    PIAF rue du Bât le Tan<br>
+                    36100 ISSOUDUN</p>
+                <p>Tel : 02 52 03 16 26</p>
+                <p>Fax : 02 54 21 79 37</p>
+                <p>contactatlfissoundun.org</p>
+            </section>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</div>
+</div>
 </body>
 </html>

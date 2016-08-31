@@ -1,0 +1,89 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #FFF;
+    line-height: 1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ol, ul, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*----------------------------------  CSS POUR TOUS */
+
+
+
+
+/*------ FOOTER ----------------------------*/
+
+footer{
+    background-color: #000;
+    padding-bottom: 105px;
+    padding-top: 70px;
+    position: relative;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+footer li{
+    display: block;
+}
+
+footer section{
+    padding-right: 0px;
+    display: inline-block;
+    vertical-align: top;
+    width:24%;
+    text-align: left;
+
+}
+footer section:nth-child(n+1){
+    margin-left: 5px;
+
+}
+
+
+footer p{
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+}
+footer a{
+    color: #535353;
+    line-height: 1.5em;
+
+}

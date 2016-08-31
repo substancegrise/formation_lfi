@@ -1,11 +1,13 @@
 @extends('layouts.master')
 
+@push('meta')
+< meta name="csrf-token" content="{{ csrf_token() }}" />
+@endpush
+
 @section('main_container')
 
     <form action="{{url('login')}}" method="post">
-
         {{csrf_field()}}
-
         <p><label for="name">Username</label>
             <input type="text" name="name" value="{{old('name')}}">
             @if($errors->has('name')) <span>{{$erros->first('name')}}</span>@endif
