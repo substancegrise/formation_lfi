@@ -13,4 +13,7 @@ class BackController extends Controller
 
         return view('admin.index');
     }
+
+
+
 }

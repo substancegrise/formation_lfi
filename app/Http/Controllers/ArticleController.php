@@ -6,6 +6,8 @@ use App\Article;
 use App\Article_categorie;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\File;
+
 
 use App\Http\Requests;
 
@@ -81,10 +83,8 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+
+
 
     /**
      * Show the form for editing the specified resource.
@@ -94,11 +94,11 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        $article_categorie = Article_categorie::lists('titre', 'id');;
+        $categorie = Article_categorie::lists('titre', 'id');;
 
         $article = Article::find($id);
 
-        return view('admin.edit', compact('article', 'article_categorie'));
+        return view('admin.edit', compact('article', 'categorie'));
     }
 
     /**
@@ -179,13 +179,15 @@ class ArticleController extends Controller
 
             $img->move(env('UPLOADS'), $fileName);
 
-            $apero->uri = $fileName;
+            $article->uri = $fileName;
 
             $article->save();
 
         }
 
     }
+
+
 
 
 }

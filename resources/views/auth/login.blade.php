@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('content')
+@section('main_container')
 
     <form action="{{url('login')}}" method="post">
 

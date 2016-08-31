@@ -12,7 +12,7 @@
             @foreach($articles as $article)
                 <div class="row featurette">
                     <div class="col-md-7">
-                        <a href="{{url('article', $article->id)}}"><h2 class="featurette-heading">{{$article->title}}</h2></a>
+                        <a href="{{url('article', $article->id)}}"><h2 class="featurette-heading">{{$article->titre}}</h2></a>
                         <p class="lead">{{$article->description}}</p>
 
                         @foreach($categories as $categorie)
@@ -24,6 +24,14 @@
 
                         <a class="btn btn-default" href="{{url('article', $article->id)}}">lire la suite</a>
                     </div>
+
+
+                    <div class="col-md-5">
+                        @if(count($article->uri)>0)
+                            <img class="featurette-image img-responsive" src="{{url('assets',['images', $article->uri])}}"/>
+                        @endif
+                    </div>
+
 
                     <div class="col-md-5">
                         @if(count($article->media)>0)

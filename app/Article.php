@@ -9,7 +9,7 @@ class Article extends Model
 {
     public $table = 'articles';
     protected $fillable = [
-        'titre','description', 'content','adresse','date_event','media_id', 'article_id'
+        'titre','description', 'content','adresse','date_event','media_id', 'article_id','uri'
     ];
 
     public function category()

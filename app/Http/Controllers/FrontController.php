@@ -25,6 +25,19 @@ class FrontController extends Controller
 
     }
 
+
+    public function showArticle($id)
+    {
+        $articles = Article::find($id);
+        $categories = Article_categorie::all();
+
+        return view('front.article', [
+            'articles' => $articles,
+            'categories' => $categories
+        ]);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

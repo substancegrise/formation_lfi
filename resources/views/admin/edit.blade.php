@@ -187,7 +187,6 @@
 
 
 
-
                             <p><label for="date_event">Date de l'article *</label>{{$article->date_event}}</p>
                             <input id="date_event" type="date" name="date_event" value="">
 

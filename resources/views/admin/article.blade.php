@@ -17,6 +17,7 @@
 
 
 
+
     <div class="clearfix"></div>
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -70,7 +71,10 @@
                                             <td>{{$article->date_event}}</td>
 
                                             <td>
-                                                <a href="{{route('admin.article.edit', [$article->id])}}"><input class="btn btn-dark" type="submit"  value="edit"></a>
+                                                <div>
+                                                <a class="btn btn-dark" href="{{route('admin.article.edit', [$article->id])}}"> edit </a>
+
+                                                </div>
                                             </td>
 
                                             <td>
@@ -81,7 +85,7 @@
                                             </td>
 
                                             <td>
-                                                <form action="{{route('admin.article.update', [$article->id])}}" method="post">
+                                                <form action="{{route('admin.publish.update', [$article->id])}}" method="post">
                                                     {{csrf_field()}}
                                                     {{method_field('PUT')}}
 
