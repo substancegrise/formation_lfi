@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Media;
 use App\Article_categorie;
 use Illuminate\Http\Request;
 
@@ -183,9 +184,19 @@ class ArticleController extends Controller
             $img->move(env('UPLOADS'), $fileName);
             $img2->move(env('UPLOADS'), $fileName2);
 
+            $media = Media::create();
+            $media->setAttribute('titre', $fileName2);
+            $media->setAttribute('type', 'image');
+            $media->setAttribute('uri', env('UPLOADS') . '/' . $fileName2);
+
+
+            //array('titre' => $fileName2, 'type' => 'image', 'uri' => env('UPLOADS') . '/' . $fileName2));
+            $mediaId = $media->save();
+
+
             $article->uri = $fileName;
 
-            $article->media->uri = $fileName2;
+            $article->media_id = $mediaId;
 
             $article->save();
 

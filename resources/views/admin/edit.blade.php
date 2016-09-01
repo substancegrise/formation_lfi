@@ -71,6 +71,7 @@
                                 </span>
                             @endif
 
+
                             <div class="item form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">Description<span class="required">*</span>
                                 </label>
@@ -91,7 +92,7 @@
 
                         <div class="item form-group">
                             <p><label class="control-label col-md-3 col-sm-3 col-xs-12" for="date_event">Date Event *</label>{{$article->date_event}}</p>
-                            <input id="date_event" type="text" name="date_event" value="{{$article->date_event}}">
+                            <input id="date_event" type="date" name="date_event" value="{{$article->date_event}}">
                             </div>
                             @if($errors->has('date_event'))
                                 <span class="admin_error">

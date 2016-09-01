@@ -65,6 +65,7 @@
 
                                             <td><a href="{{route('admin.article.edit', [$article->id])}}">{{$article->titre}}</a></td>
 
+
                                             <td><a href="{{route('admin.article.edit', [$article->id])}}">{{$article->article_categorie_id}}</a></td>
 
                                             <td>{{$article->created_at}}</td>

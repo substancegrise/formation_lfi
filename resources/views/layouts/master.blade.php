@@ -7,7 +7,10 @@
 
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
-    <!--// FONT -->
+    <!--FONT -->
+    <link href="{{ asset("css/latofonts.css") }}" rel="stylesheet">
+    <link href="{{ asset("css/latostyle.css") }}" rel="stylesheet">
+    <!--CSS-->
 
     <link rel="stylesheet" href="css/style.css" media="screen">
     <link rel="stylesheet" href="" media="print">
@@ -16,7 +19,7 @@
 <body>
 <div class="site_pusher">
     <header>
-        <div>
+        <div id="head">
             <a class="header_icon" id="" href=""></a>
             <img id="logo" src="">
             <menu id="mymenu">
@@ -26,12 +29,31 @@
                     <li><a href="#">TrEMA LAB</a></li>
                     <li><a href="price.html">ACTUALITE</a></li>
                 </ul>
+                <div>
+                    <p><a href="">[ ESPACE ENTREPRISE ]</a></p>
+                    <img src="">
+                    <img src="">
+                </div>
+
             </menu>
         </div>
     </header>
+
             @yield('main_container')
+    </div>
     <footer>
         <div class="content">
+            <div>
+                <p>SUIVEZ-NOUS SUR LES RÉSEAUX SOCIAUX</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"><img src=""></a></li>
+                    <li><a href="#"><img src=""></a></li>
+                    <li><a href="#"><img src=""></a></li>
+                    <li><a href="#"><img src=""></a></li>
+                </ul>
+            </div>
             <section>
                 <nav>
                     <ul>
@@ -81,7 +103,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
-</div>
 </div>
 </body>
 </html>

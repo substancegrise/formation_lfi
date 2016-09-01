@@ -17,7 +17,7 @@ class FrontController extends Controller
      */
     public function index()
     {
-        $articles = Article::time()->where('status', '=', 'published')->orderBy('date_event')->paginate(5);
+        $articles = Article::time()->where('status', '=', 'published')->orderBy('date_event')->paginate(6);
         $categories = Article_categorie::all();
 
 
