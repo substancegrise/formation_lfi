@@ -18,18 +18,27 @@
     <!-- page content -->
         <div class="site_content">
             <section id="slider">
-                <div>
-                    <h1 class="h1txt">SE FORMER AU METIER DES MUSIQUES ACTUELLES</h1>
-                </div>
-                <div class="content">
-                    <div>
-                        <a href="" class="apointe">DECOUVRIR</a>
-                        <a><img src=""></a>
+
+                    <div class="txtslider" >
+                        <h1 >SE FORMER AUX METIERS DES MUSIQUES ACTUELLES</h1>
                     </div>
-                </div>
+                    <div class="next">
+                        <a href="" class="pointe">DÉCOUVRIR</a>
+                        <a class="apointe"><img src="assets/images/assets/next_blanc.png"></a>
+                    </div>
+                <img class="blackpointe" src="assets/images/assets/pointe_black.png">
             </section>
             <section id="formations">
                 <div class="content">
+                    <div>
+                    <menu id="mymenu">
+                        <ul>
+                            <li><a href="index.html">PRESENTATION</a></li>
+                            <li><a href="#">FORMATIONS</a></li>
+                            <li><a href="#">TrEMA LAB</a></li>
+                            <li><a href="price.html">ACTUALITE</a></li>
+                        </ul>
+                    </div>
                     <div>
                         <h2>NOS<br>FORMATIONS</h2>
                         <p>Depuis 1989 LFI développe une activité exclusive de formation aux métiers des Musiques Actuelles et propose notamment des formations certifiantes

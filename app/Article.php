@@ -12,9 +12,9 @@ class Article extends Model
         'titre','description', 'content','adresse','date_event','media_id', 'article_id','uri'
     ];
 
-    public function category()
+    public function categorie()
     {
-        return $this->belongsTo('App\Category');
+        return $this->belongsTo('App\Article_categorie');
     }
 
     public function media()

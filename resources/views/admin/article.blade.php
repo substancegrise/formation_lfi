@@ -66,11 +66,10 @@
                                             <td><a href="{{route('admin.article.edit', [$article->id])}}">{{$article->titre}}</a></td>
 
 
-                                            <td><a href="{{route('admin.article.edit', [$article->id])}}">{{$article->article_categorie_id}}</a></td>
+                                            <td><a href="{{route('admin.article.edit', [$article->id])}}">{{$article->categorie}}</a></td>
 
                                             <td>{{$article->created_at}}</td>
                                             <td>{{$article->date_event}}</td>
-
                                             <td>
                                                 <div>
                                                 <a class="btn btn-dark" href="{{route('admin.article.edit', [$article->id])}}"> edit </a>

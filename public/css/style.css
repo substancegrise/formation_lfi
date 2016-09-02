@@ -34,12 +34,55 @@ body {
     box-sizing: border-box;
     background-color: #FFF;
     line-height: 1;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'melbourneregular', sans-serif;
+    background-repeat: no-repeat;
 }
+
 
 ol, ul, a {
     list-style: none;
     text-decoration: none;
+    color: red;
+}
+
+/*------ FONT ----------------------------*/
+
+@font-face {
+    font-family: 'melbournebold';
+    src: url('../fonts/melbourne/melbourne_bold_basic-webfont.woff2') format('woff2'),
+         url('../fonts/melbourne/melbourne_bold_basic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'melbourneregular';
+    src: url('../fonts/melbourne_regular_basic-webfont.woff2') format('woff2'),
+         url('../fonts/melbourne_regular_basic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /*------ MENU ----------------------------*/
@@ -62,9 +105,21 @@ ol, ul, a {
     text-align: center;
     bottom: 0;
     padding-top: 44px;
-    font-family: DINALIGH;
+    font-family: ;
 
+}
 
+#entreprise{
+	font-family: 'latolight';
+	font-size: 14px;
+}
+
+#entreprise a:nth-last-child(1){
+	padding-left: 10px;
+}
+
+#entreprise a:nth-child(1){
+	padding-right: 30px;
 }
 
 /*------ CSS POUR TOUS ----------------------------*/
@@ -84,14 +139,19 @@ ol, ul, a {
     margin-left: auto;
     width: 960px;
     text-align: center;
+    
+}
+
+.pointe{
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'latolight';
 }
 
 .apointe{
-    color: white;
-    font-size: 0.8rem;
-    font-family: lato-regular;
-
+	
 }
+
 
 li{
     display: inline-block;
@@ -120,18 +180,43 @@ div{
     height: 800px;
     margin-bottom: 0px;
     vertical-align: bottom;
-    background-image: url("../assets/images/photos/photos_1.jpg");
+    background-image: url("../assets/images/photos/photos_5.jpg");
+    background-repeat: no-repeat;
+
+
 }
-.h1txt{
+
+.txtslider{
     float: left;
     padding:0.1rem 2rem 0.1rem 5rem;
     margin-top: 10%;
     background-color: red;
     color: white;
     font-size: 1.2rem;
-    font-family: DINALIGH;
+    font-family: 'melbourneregular';
+    position: absolute;
+    
 }
 
+.next{
+
+	display: flex;
+    flex-direction: column;
+	margin-left: 50%;
+	margin-right:50%;
+    text-align: center;
+    position: absolute; z-index: 10;
+    bottom: 0
+
+}
+.blackpointe{
+
+	margin-left: 50%;
+	margin-right:50%;
+    position: absolute; z-index: 5;
+    bottom: -37px;
+
+}
 
 
 /*------ FORMATION ----------------------------*/
@@ -145,6 +230,7 @@ div{
     text-align: center;
     vertical-align: bottom;
     background-image: url("../assets/images/photos/photos_2.jpg");
+    background-repeat:no-repeat;
 }
 
 /*------ TREMA ----------------------------*/
@@ -158,6 +244,7 @@ div{
     text-align: center;
     vertical-align: bottom;
     background-image: url("../assets/images/photos/photos_3.jpg");
+    background-repeat:no-repeat;
 }
 
 /*------ ACTUS ----------------------------*/
@@ -171,6 +258,7 @@ div{
     text-align: center;
     vertical-align: bottom;
     background-image: url("../assets/images/photos/photos_4.jpg");
+    background-repeat:no-repeat;
 }
 
 
@@ -184,6 +272,7 @@ div{
     text-align: center;
     vertical-align: bottom;
     background-image: url("../assets/images/photos/photos_4.jpg");
+    background-repeat:no-repeat;
 }
 
 
