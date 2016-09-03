@@ -18,19 +18,16 @@
 </head>
 <body>
 <div class="site_pusher">
-    <header>
-        <div id="head">
-            <a class="header_icon" id="" href=""></a>
-            <img id="logo" src="">
-
-                <div id="entreprise">
-                    <a href="">[ ESPACE ENTREPRISE ]</a>
-                    <a href=""><img src="../public/assets/images/assets/loupe_white.png"></a>
+    <header id="head">
+            <div>
+                <a class="header_icon" id="" href=""></a>
+                <img id="logo" src="">
+                    <div id="entreprise">
+                        <a href="">[ ESPACE ENTREPRISE ]</a>
+                        <a href=""><img src="../public/assets/images/assets/loupe_white.png"></a>
                         <a href=""><img src="../public/assets/images/assets/sound_white.png"></a>
-                </div>
-
-            </menu>
-        </div>
+                    </div>
+            </div>
     </header>
 
             @yield('main_container')

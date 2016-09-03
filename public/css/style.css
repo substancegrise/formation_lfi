@@ -36,8 +36,8 @@ body {
     line-height: 1;
     font-family: 'melbourneregular', sans-serif;
     background-repeat: no-repeat;
+    background-color: #f9f9f9;
 }
-
 
 ol, ul, a {
     list-style: none;
@@ -85,43 +85,6 @@ ol, ul, a {
 
 }
 
-/*------ MENU ----------------------------*/
-#head{
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    max-height: 150px;
-    width: 100%;
-    z-index: 10000;
-    overflow: hidden;
-    text-align: center;
-
-}
-
-#mymenu{
-    float: none;
-    display: inline-block; /* pour le flottement des éléments*/
-    text-align: center;
-    bottom: 0;
-    padding-top: 44px;
-    font-family: ;
-
-}
-
-#entreprise{
-	font-family: 'latolight';
-	font-size: 14px;
-}
-
-#entreprise a:nth-last-child(1){
-	padding-left: 10px;
-}
-
-#entreprise a:nth-child(1){
-	padding-right: 30px;
-}
-
 /*------ CSS POUR TOUS ----------------------------*/
 .site_pusher {
     transform: translateX(0px);
@@ -129,8 +92,8 @@ ol, ul, a {
 
 }
 
-
 .content{
+
     padding-bottom:
     margin: 0 auto 0px auto;
     margin-top: 0px;
@@ -142,16 +105,6 @@ ol, ul, a {
     
 }
 
-.pointe{
-    color: white;
-    font-size: 0.8rem;
-    font-family: 'latolight';
-}
-
-.apointe{
-	
-}
-
 
 li{
     display: inline-block;
@@ -160,6 +113,45 @@ li{
 div{
     display: block;
 }
+
+.whitepointe{
+	bottom: 0px;
+}
+
+/*------ MENU ----------------------------*/
+#head{
+
+
+	
+	position: fixed;
+    top: 1%;
+    text-align: right;
+	max-height: 150px;
+	width: 95%;
+	z-index: 10000;
+	overflow: hidden;
+}
+
+
+
+#entreprise{
+
+	float: right;
+	font-family: 'latolight';
+	font-size: 14px;
+	display: inline-block; /* pour le flottement des éléments*/
+	text-align: center;
+
+}
+
+#entreprise a:nth-last-child(1){
+	padding-left: 10px;
+}
+
+#entreprise a:nth-child(1){
+	padding-right: 30px;
+}
+
 
 /*--------------  SLIDER */
 .site_content{
@@ -182,19 +174,18 @@ div{
     vertical-align: bottom;
     background-image: url("../assets/images/photos/photos_5.jpg");
     background-repeat: no-repeat;
-
-
 }
 
 .txtslider{
     float: left;
     padding:0.1rem 2rem 0.1rem 5rem;
     margin-top: 10%;
-    background-color: red;
+    background-color: #e1261c;
     color: white;
     font-size: 1.2rem;
     font-family: 'melbourneregular';
     position: absolute;
+
     
 }
 
@@ -202,20 +193,23 @@ div{
 
 	display: flex;
     flex-direction: column;
-	margin-left: 50%;
-	margin-right:50%;
+    width: 100%;
     text-align: center;
-    position: absolute; z-index: 10;
-    bottom: 0
-
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
 }
-.blackpointe{
 
-	margin-left: 50%;
-	margin-right:50%;
-    position: absolute; z-index: 5;
-    bottom: -37px;
+.pointe{
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'latolight';
+}
 
+.apointe{
+
+    margin-top: 2%;
+    
 }
 
 
@@ -233,6 +227,151 @@ div{
     background-repeat:no-repeat;
 }
 
+#mymenu{
+    float: none;
+    display: inline-block; /* pour le flottement des éléments*/
+    text-align: center;
+    bottom: 0;
+    padding-top: 44px;
+    font-family: 'latolight';
+
+}
+
+.blackpointe{
+
+  
+}
+
+
+#txt_type1{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 5%;
+}
+
+
+.titre{
+	text-align: left;
+    order: 1;
+    width: 30%;
+    color: #e1261c;
+    font-size: 3rem;
+    font-family: 'melbourneregular';
+}
+
+#txt1{
+    order: 2;
+    width: 35%;
+    font-size: 17px;
+    font-family: 'latolight';
+    line-height : 23px;
+}
+#txt2{
+    order: 3;
+    width: 35%;
+    font-size: 17px;
+    font-family: 'latolight';
+    line-height : 23px;
+}
+
+.imgform{
+    margin-top: 5%;
+    text-align: left;
+
+    
+
+}
+.inner-box{
+    height: 100%;
+}
+
+.inner-box p{
+   margin-left: 30px;
+   margin-right: 20px
+}
+
+.cadreform{
+    width: 33.25%;
+    height: 204px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+
+.txtform1{
+    text-align: left;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    margin-top: 44px;
+    font-size: 21px;
+    font-family: 'melbourneregular';
+    background-color: #e1261c;
+
+}
+.txtform2{
+    text-align: left;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    margin-top: 69px;
+    font-size: 21px;
+    font-family: 'melbourneregular';
+    background-color: #e1261c;
+
+}
+.txtform3{
+    text-align: left;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    margin-top: 94px;
+    font-size: 21px;
+    font-family: 'melbourneregular';
+    background-color: #e1261c;
+
+}
+
+.formtype{
+	margin-top: 166px;
+    margin-left: 30px;
+    color: white;
+    position: absolute;
+    z-index: 500;
+
+
+}
+
+.eyes{
+    float: right;
+    position: relative;
+    margin-top: 166px;
+    margin-right: 20px;
+    z-index: 300;
+
+}
+.formvisu{
+    color: white;
+    position: absolute;
+
+}
+
+.detail{
+	
+    margin-top: 5%;
+    font-size: 14px;
+    font-family: 'latoregular';
+}
+.buttdetail{
+	color:black;
+	border:1px groove black;
+	padding: 5px 15px;
+	/*-box-shadow: 2px 2px 2px black;--*/
+
+}
 /*------ TREMA ----------------------------*/
 
 #trema {
@@ -246,6 +385,101 @@ div{
     background-image: url("../assets/images/photos/photos_3.jpg");
     background-repeat:no-repeat;
 }
+
+.cdrtrema{
+	display: flex;
+}
+
+/*--VISU--*/
+
+#tremavisu{
+    background-image: url("../assets/images/trema/pictrema.png");
+    background-repeat:no-repeat;
+    height: 300px;
+    position:relative;
+    display: inline-block;
+}
+
+.titretrema{
+	text-align: left;
+    order: 1;
+    width: 30%;
+    color: #e1261c;
+    font-size: 3rem;
+    font-family: 'melbourneregular';
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+
+
+.txttrema1{
+	margin-left: 5px;
+    padding-right: 60px;
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    margin-top: 44px;
+    font-size: 18px;
+    font-family: 'melbourneregular';
+    background-color: #e1261c;
+}
+
+.txttrema2{
+	margin-left: 5px;
+    padding-right: 60px;
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    margin-top: 66px;
+    font-size: 18px;
+    font-family: 'melbourneregular';
+    background-color: #e1261c;
+}
+
+.txttrema3{
+	margin-left: 5px;
+    padding-right: 60px;
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    margin-top: 88px;
+    font-size: 18px;
+    font-family: 'melbourneregular';
+    background-color: #e1261c;
+}
+
+
+
+/*--TXT--*/
+
+#trematxt div:nth-child(1){
+	color: #e1261c;
+	font-size: 18px;
+	
+
+}
+
+#trematxt div:nth-child(n+2){
+	display: block;
+	color: green;
+}
+
+#trematxt{
+	width: 40%;
+	text-align: left;
+	font-family: 'latoregular';
+	display: inline;
+	background-color: white;
+	position: absolute;
+	z-index: 600;
+}
+
+
 
 /*------ ACTUS ----------------------------*/
 
@@ -262,19 +496,111 @@ div{
 }
 
 
+#middle {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	display: block;
+}
+
+
+
+#cdractus{
+	margin: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width:31%;
+}
+.titreactus{
+    text-align: left;
+    color: #e1261c;
+    font-size: 3rem;
+    font-family: 'melbourneregular';
+}
+/*--TYPE DATE--*/
+#typedate{
+	z-index: 150;
+	position: absolute;
+	margin-top:50px;
+	padding-left: 20px;
+	color: white;
+	background-color: #e1261c;
+	font-family: 'melbourneregular';
+	display: block;
+	vertical-align: middle;
+}
+
+#typedate a{
+	color: white;
+	
+}
+
+#type{
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: left;
+}
+
+#date{
+	display: inline-block;
+	text-align: right;
+	font-size: 30px;
+}
+
+#titledesc{
+	text-transform: uppercase;
+	color: white;
+	position: absolute;
+    z-index: 200;
+    text-align: center;
+    height: inherit;
+    width: inherit;
+    margin-top: 107px;
+    padding-left: 63px;
+    text-align: left;
+
+}
+
+#titleactus{
+	
+
+}
+
+#descactus{
+	font-size: 39px;
+    margin-right: 224px;
+}
+
 /*------ PARTNERS----------------------------*/
 #partners{
     padding-bottom: 0px;
     padding-top: 0px;
     position: relative;
-    height: 800px;
+    height: 200px;
     margin-bottom: 0px;
     text-align: center;
-    vertical-align: bottom;
-    background-image: url("../assets/images/photos/photos_4.jpg");
-    background-repeat:no-repeat;
+    background-color: #f9f9f9;
+    background: no-repeat;
+    vertical-align: middle;
+	padding:25px 0 25px 0;
 }
 
+#logo_partners{
+	display: inline-block; /* pour le flottement des éléments*/
+	text-align: center;
+}
+
+#logo_partners li{
+	display: inline-block;	
+	margin-left: 80px;
+	color:#ccc;
+}
+
+#logo_partners>li:first-of-type{
+	margin-left: 0px;
+	float: left;
+}
 
 
 /*------ FOOTER ----------------------------*/
