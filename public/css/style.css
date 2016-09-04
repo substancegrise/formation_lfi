@@ -87,8 +87,7 @@ ol, ul, a {
 
 /*------ CSS POUR TOUS ----------------------------*/
 .site_pusher {
-    transform: translateX(0px);
-    transition-duration: 0.3s;
+   
 
 }
 
@@ -114,15 +113,12 @@ div{
     display: block;
 }
 
-.whitepointe{
-	bottom: 0px;
+.blackpointe{
+	
 }
 
 /*------ MENU ----------------------------*/
 #head{
-
-
-	
 	position: fixed;
     top: 1%;
     text-align: right;
@@ -359,7 +355,7 @@ div{
 
 }
 
-.detail{
+.detailsujet{
 	
     margin-top: 5%;
     font-size: 14px;
@@ -393,14 +389,12 @@ div{
 /*--VISU--*/
 
 #tremavisu{
-    background-image: url("../assets/images/trema/pictrema.png");
-    background-repeat:no-repeat;
-    height: 300px;
     position:relative;
     display: inline-block;
 }
 
 .titretrema{
+	position: absolute;
 	text-align: left;
     order: 1;
     width: 30%;
@@ -411,6 +405,7 @@ div{
     padding-top: 20px;
 
 }
+
 
 
 
@@ -469,16 +464,25 @@ div{
 	color: green;
 }
 
-#trematxt{
-	width: 40%;
-	text-align: left;
-	font-family: 'latoregular';
-	display: inline;
-	background-color: white;
-	position: absolute;
-	z-index: 600;
+#trematxt > div{
+    height: 80%;
+    width: 110%;
+    top: 10%;
+    right: -2%;
+    text-align: left;
+    font-family: 'latoregular';
+    /* display: inline; */
+    background-color: white;
+    /* position: absolute; */
+    z-index: 600;
+    position: absolute;
 }
 
+#containtrema{
+	position: absolute;
+    top: 10%;
+
+}
 
 
 /*------ ACTUS ----------------------------*/
@@ -487,11 +491,11 @@ div{
     padding-bottom: 0px;
     padding-top: 0px;
     position: relative;
-    height: 800px;
+    height: 900px;
     margin-bottom: 0px;
     text-align: center;
     vertical-align: bottom;
-    background-image: url("../assets/images/photos/photos_4.jpg");
+    background-image: url("../assets/images/photos/photos_4_900.jpg");
     background-repeat:no-repeat;
 }
 
@@ -517,6 +521,7 @@ div{
     color: #e1261c;
     font-size: 3rem;
     font-family: 'melbourneregular';
+    padding-top: 100px;
 }
 /*--TYPE DATE--*/
 #typedate{
@@ -572,18 +577,28 @@ div{
     margin-right: 224px;
 }
 
+.blackrow{
+	    margin-top: 40px;
+}
+
+
 /*------ PARTNERS----------------------------*/
 #partners{
     padding-bottom: 0px;
     padding-top: 0px;
     position: relative;
-    height: 200px;
+    height: 140px;
     margin-bottom: 0px;
     text-align: center;
     background-color: #f9f9f9;
     background: no-repeat;
     vertical-align: middle;
 	padding:25px 0 25px 0;
+}
+
+#txtpartners{
+	color: #a6a6a6;
+	margin-bottom: 20px;
 }
 
 #logo_partners{
@@ -602,20 +617,179 @@ div{
 	float: left;
 }
 
+#logo_partners li a{
+	opacity: 1;
+	transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -webkit-transition:all 1s ease-in-out;
+}
+
+#logo_partners li a:hover{
+	color:#ccc;
+	opacity: 0.3;
+	transition: all 1s ease-in-out;
+}
+
+/*------ INFO ACCES ----------------------------*/
+
+#contact {
+
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: relative;
+    height: 331px;
+    margin-bottom: 0px;
+    text-align: left;
+    vertical-align: bottom;
+    background-image: url("../assets/images/map/map_big.jpg");
+    background-size: contain;
+}
+#titleacces{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #a6a6a6;
+    font-family: 'melbourneregular';
+}
+#txtacces{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #a6a6a6;
+    font-family: 'latoregular';
+    text-align: justify;
+    text-justify:newspaper;
+}
+.butgoogle{
+    margin-top: 35px;
+}
+
+.butgoogle a{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a6a6a6;
+    color:white;
+    font-family: 'latoregular';
+    font-size: 14px;
+}
+
+#acces{
+
+	text-align: left;
+	display: inline-block;
+	width: 34%;
+    margin-left: -114px;
+}
+
+#map{
+	display: inline-block;
+	width: 50%
+
+}
+/*------ FORMULAIRE ----------------------------*/
+
+#formulaire {
+
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: relative;
+    height: 331px;
+    margin-bottom: 0px;
+    text-align: left;
+    vertical-align: bottom;
+    background-color: #ededed;
+    border-top: 2px solid white;
+
+}
+
+
+#formleft{
+    text-align: left;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width:31%;
+}
+
+#formleft h5{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #a6a6a6;
+    font-family: 'melbourneregular'; 
+}
+
+#formleft p:nth-child(1){
+     margin-top: 20px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #a6a6a6;
+    font-family: 'latoregular';
+    text-align: justify;
+    text-justify:newspaper;
+}
+
+
+#formcenter{
+    margin: 5px;
+    display: inline-block;
+    vertical-align: left;
+    text-align: center;
+    width:31%;
+
+}
+
+#formcenter div{
+    padding-top: 10px;
+    font-family: 'latoregular';
+}
+
+#formright div{
+    padding-top: 10px;
+    font-family: 'latoregular';
+
+}
+
+#formright{
+    margin: 5px;
+    display: inline-block;
+    vertical-align: left;
+    text-align: center;
+    width:31%;  
+}
+
+#cookie{
+    font-size: 12px;
+    font-family: 'latoregular';
+    color: #a6a6a6;
+
+}
 
 /*------ FOOTER ----------------------------*/
 
 footer{
-    background-color: #000;
-    padding-bottom: 105px;
-    padding-top: 70px;
+    height: 302px;
+    background-color: #f9f9f9;
+    padding-bottom: 0;
+    padding-top: 0px;
     position: relative;
     margin-bottom: 0px;
     box-sizing: border-box;
+    font-family: 'latolight';
+    font-size: 13px;
+
+}
+footer li img{
+    
+    text-align: center;
+    display: inline-block;  
+    margin-left: 80px;
+    color:#ccc;
 }
 
 footer li{
     display: block;
+}
+footer #sociaux li{
+    display: inline-block;
 }
 
 footer section{
@@ -632,13 +806,55 @@ footer section:nth-child(n+1){
 }
 
 
-footer p{
-    margin-top: 35px;
-    margin-bottom: 25px;
-
-}
 footer a{
     color: #535353;
-    line-height: 1.5em;
+    line-height: 1.8em;
 
 }
+
+/*------ FORMULAIRE ROUGE----------------------------*/
+
+.closeform{
+	color: white;
+}
+
+#butskiky{
+	position: fixed;
+	right: 10px;
+	bottom:30%;
+}
+
+.formred::after{
+	content: '';
+    position: absolute;
+    background-color: red;
+    display: block;
+    width: 300%;
+    height: 200%;
+    top: 0%;
+    right: -94%;
+    transform: rotate(-41deg);
+
+}
+
+.formred{
+
+	width: 0%;
+	height:0%;
+	position: fixed;
+	bottom:0%;
+	right: 0%;
+	z-index: 2000;
+	-webkit-transition:width 2s, height 2s;
+	transition:width 2s, height 2s;
+
+}
+
+.animform{
+
+	width: 100%;
+	height:100%;
+	-webkit-transition:width 2s, height 2s;
+	transition:width 2s, height 2s;
+}
+

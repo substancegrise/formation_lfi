@@ -7,6 +7,13 @@
 
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
+    <!-- Bootstrap -->
+    <link href="{{ asset("css/bootstrap.min.css") }}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{{ asset("css/font-awesome.min.css") }}" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="{{ asset("css/gentelella.min.css") }}" rel="stylesheet">
+
     <!--FONT -->
     <link href="{{ asset("css/latofonts.css") }}" rel="stylesheet">
     <link href="{{ asset("css/latostyle.css") }}" rel="stylesheet">
@@ -37,18 +44,18 @@
             <div>
                 <p>SUIVEZ-NOUS SUR LES RÉSEAUX SOCIAUX</p>
             </div>
-            <div>
+            <div id="sociaux">
                 <ul>
-                    <li><a href="#"><img src=""></a></li>
-                    <li><a href="#"><img src=""></a></li>
-                    <li><a href="#"><img src=""></a></li>
-                    <li><a href="#"><img src=""></a></li>
+                    <li><a href="#"><img src="../public/assets/images/sociaux/facebook.png"></a></li>
+                    <li><a href="#"><img src="../public/assets/images/sociaux/linkedin.png"></a></li>
+                    <li><a href="#"><img src="../public/assets/images/sociaux/instagram.png"></a></li>
+                    <li><a href="#"><img src="../public/assets/images/sociaux/youtube.png"></a></li>
                 </ul>
             </div>
             <section>
                 <nav>
                     <ul>
-                        <li><a href="#">L'ECOLE</a></li>
+                        <li><a href="#">ACCUEIL</a></li>
                         <li><a href="#">L'ECOLE</a></li>
                         <li><a href="#">LE TrEMA LAB</a></li>
                         <li><a href="#">AGENDA</a></li>
@@ -91,9 +98,36 @@
             </section>
         </div>
     </footer>
+    <div class="formred">
+        <div class="closeform">x</div>
+
+
+
+
+    </div>
+<div id="butskiky">
+    <ul>
+        <li class="openform">FORM</li>
+        <li><a></a></li>
+    </ul>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
-</div>
+<script>
+
+    $( document ).ready(function() {
+
+        $( ".openform" ).on( "click", function() {
+            $( '.formred' ).addClass('animform');
+        });
+
+        $( ".closeform" ).on( "click", function() {
+            $( '.formred' ).removeClass('animform');
+        });
+    });
+
+</script>
+
 </body>
 </html>
