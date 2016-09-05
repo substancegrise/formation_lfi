@@ -18,19 +18,47 @@
     <link href="{{ asset("css/latofonts.css") }}" rel="stylesheet">
     <link href="{{ asset("css/latostyle.css") }}" rel="stylesheet">
     <!--CSS-->
-
     <link rel="stylesheet" href="css/style.css" media="screen">
     <link rel="stylesheet" href="" media="print">
     <!--FICHIER JS -->
 </head>
 <body>
 <div class="site_pusher">
-    <header id="head">
+    <header id="head" >
+        <section>
+        <div class="loader">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div>
+            <menu id="mymenu">
+                <ul>
+                    <li><a href="{{url('/')}}">ACCUEIL</a></li>
+                    <li><a href="#">PRESENTATION</a></li>
+                    <li><a href="#">FORMATIONS</a></li>
+                    <li><a href="#">TrEMA LAB</a></li>
+                    <li><a href="#">ACTUALITE</a></li>
+                </ul>
+            </menu>
+        </div>
+        </section>
+
+        <!--ESPACE PRO EST RECHERCHE -->
             <div>
                 <a class="header_icon" id="" href=""></a>
                 <img id="logo" src="">
-                    <div id="entreprise">
-                        <a href="">[ ESPACE ENTREPRISE ]</a>
+                    <div id="entreprise" data-0="color:rgb(255,255,255);" data-900="color:rgb(0,0,0);">
+                        <p>[ ESPACE ENTREPRISE ]</p>
                         <a href=""><img src="../public/assets/images/assets/loupe_white.png"></a>
                         <a href=""><img src="../public/assets/images/assets/sound_white.png"></a>
                     </div>
@@ -111,9 +139,14 @@
         <li><a></a></li>
     </ul>
     </div>
+
+    <script type="text/javascript" src="{{ asset("js/skrollr.min.js") }}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
 <script>
 
     $( document ).ready(function() {

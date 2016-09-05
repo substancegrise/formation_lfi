@@ -25,7 +25,11 @@ class FrontController extends Controller
 
     }
 
-
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function showArticle($id)
     {
         $articles = Article::find($id);
@@ -36,13 +40,33 @@ class FrontController extends Controller
             'categories' => $categories
         ]);
     }
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showFormation()
 
+    {
+
+        return view('formations');
+    }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function showProduction()
+
+    {
+
+        return view('production');
+    }
+
+
+
+
     public function create()
     {
         //

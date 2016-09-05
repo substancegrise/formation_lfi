@@ -17,7 +17,13 @@
 
 Route::get('/', 'FrontController@index');
 
+Route::get('formations', 'FrontController@showFormation');
+
+Route::get('production', 'FrontController@showProduction');
+
 Route::get('article/{id}', 'FrontController@showArticle');
+
+
 
 Route::any('login', 'LoginController@login');
 

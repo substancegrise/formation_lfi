@@ -18,6 +18,7 @@
 @section('main_container')
     <section class="site_pusher">
     <!-- page content -->
+        <!-- SLIDER -->
         <div class="site_content">
             <section id="slider">
                     <div class="txtslider" >
@@ -33,16 +34,7 @@
             <section id="formations">
                 <div class="content">
                     <img class="blackpointe" src="assets/images/assets/pointe_black.png">
-                    <div>
-                    <menu id="mymenu">
-                        <ul>
-                            <li><a href="index.html">PRESENTATION</a></li>
-                            <li><a href="#">FORMATIONS</a></li>
-                            <li><a href="#">TrEMA LAB</a></li>
-                            <li><a href="price.html">ACTUALITE</a></li>
-                        </ul>
-                        </menu>
-                    </div>
+
                 <section id="txt_type1">
                     <div class="titre">
                         <h2>NOS<br>FORMATIONS</h2>
