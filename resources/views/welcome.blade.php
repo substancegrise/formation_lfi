@@ -312,7 +312,7 @@
                                                   rows="6"></textarea>
                                     </div>
                                     <div>
-                                        <button id="send" type="submit" class="">ENVOYER</button>
+                                        <button id="send" type="submit" class="boutonsend">ENVOYER</button>
                                     </div>
                                 </div>
                             </section>

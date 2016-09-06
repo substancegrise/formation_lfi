@@ -25,8 +25,11 @@
 <body>
 <div class="site_pusher">
     <header id="head">
-        <section>
-            <div class="loader">
+        <section class="loader">
+
+        <!-- <div>
+                <a href="#">
+
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
@@ -39,11 +42,12 @@
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
+                </a>
             </div>
             <div>
                 <menu id="mymenu">
                     <ul>
-                        <li><a href="{{url('/')}}">ACCUEIL</a></li>
+                        <li></li><a href="{{url('/')}}">ACCUEIL</a></li>
                         <li><a href="{{url('/')}}">PRESENTATION</a></li>
                         <li><a href="{{url('formations')}}">FORMATIONS</a></li>
                         <li><a href="#">TrEMA LAB</a></li>
@@ -51,18 +55,19 @@
                     </ul>
                 </menu>
             </div>
-        </section>
-
-        <!--ESPACE PRO EST RECHERCHE -->
-        <div>
-            <a class="header_icon" id="" href=""></a>
-            <img id="logo" src="">
             <div id="entreprise" data-0="color:rgb(255,255,255);" data-900="color:rgb(0,0,0);">
                 <p>[ ESPACE ENTREPRISE ]</p>
+                <p><span class="glyphicons glyphicons-zoom-in"></span></p>
                 <a href=""><img src="../public/assets/images/assets/loupe_white.png"></a>
                 <a href=""><img src="../public/assets/images/assets/sound_white.png"></a>
             </div>
-        </div>
+            <!--ESPACE PRO EST RECHERCHE -->
+            <div>
+                <a class="header_icon" id="" href=""></a>
+                <img id="logo" src="../public/assets/images/assets/logo_lifi_blanc.png..">
+
+            </div>
+        </section>
     </header>
 
     @yield('main_container')
@@ -92,8 +97,8 @@
                 </ul>
             </nav>
         </section><!--
-            -->
-        <section>
+
+        --><section>
             <nav>
                 <ul>
                     <li><a href="#">FORMATIONS</a></li>
@@ -105,8 +110,8 @@
                 </ul>
             </nav>
         </section><!--
-            -->
-        <section>
+
+        --><section>
             <nav>
                 <ul>
                     <li><a href="#">NEWSLETTER</a></li>
@@ -118,8 +123,8 @@
                 </ul>
             </nav>
         </section><!--
-            -->
-        <section>
+
+        --><section>
             <p>LES FORMATIONS D'ISSOUDUN<br>
                 PIAF rue du Bât le Tan<br>
                 36100 ISSOUDUN</p>
