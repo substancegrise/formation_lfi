@@ -19,7 +19,14 @@
                 <div class="x_panel">
                     <div class="x_title">
                         <h2>Articles</h2>
+
                         <ul class="nav navbar-right panel_toolbox">
+                           <li>
+                                    <a class="btn btn-danger"
+                                       href="{{route('admin.article.create')}}">
+                                        create </a>
+                           </li>
+                            </td>
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
                             <li class="dropdown">
@@ -66,6 +73,7 @@
 
                                                 <td>{{$article->created_at}}</td>
                                                 <td>{{$article->date_event}}</td>
+
                                                 <td>
                                                     <div>
                                                         <a class="btn btn-dark"

@@ -24,10 +24,10 @@
 </head>
 <body>
 <div class="site_pusher">
-    <header id="head">
+    <header id="head" >
         <section class="loader">
 
-        <!-- <div>
+        <div>
                 <a href="#">
 
                 <div class="line"></div>
@@ -45,9 +45,9 @@
                 </a>
             </div>
             <div>
-                <menu id="mymenu">
+                <menu data-0="opacity:0" data-900="opacity:1" id="mymenu" {{ (Request::is('production')||Request::is('pr')) ? ' class="blanc"' : "" }}>>
                     <ul>
-                        <li></li><a href="{{url('/')}}">ACCUEIL</a></li>
+                        <li {{ Request::is('/') ? ' class="active"' : "" }}><a href="{{url('/')}}">ACCUEIL</a></li>
                         <li><a href="{{url('/')}}">PRESENTATION</a></li>
                         <li><a href="{{url('formations')}}">FORMATIONS</a></li>
                         <li><a href="#">TrEMA LAB</a></li>
@@ -55,23 +55,22 @@
                     </ul>
                 </menu>
             </div>
-            <div id="entreprise" data-0="color:rgb(255,255,255);" data-900="color:rgb(0,0,0);">
+            <div id="entreprise" data-0="color:rgb(255,255,255);" data-900="color:rgb(0,0,0,);">
                 <p>[ ESPACE ENTREPRISE ]</p>
                 <p><span class="glyphicons glyphicons-zoom-in"></span></p>
-                <a href=""><img src="../public/assets/images/assets/loupe_white.png"></a>
+                <a href=""><img  src="../public/assets/images/assets/loupe_white.png"></a>
                 <a href=""><img src="../public/assets/images/assets/sound_white.png"></a>
             </div>
             <!--ESPACE PRO EST RECHERCHE -->
             <div>
                 <a class="header_icon" id="" href=""></a>
-                <img id="logo" src="../public/assets/images/assets/logo_lifi_blanc.png..">
-
+                <img id="logo" src="../public/assets/images/assets/logo_lifi_blanc.png">
             </div>
         </section>
     </header>
-
     @yield('main_container')
 </div>
+<!--
 <footer>
     <div class="content">
         <div>
@@ -97,35 +96,35 @@
                 </ul>
             </nav>
         </section><!--
+<!--
+<!-       --><section>
+<!--           <nav>
+                   <ul>
+                       <li><a href="#">FORMATIONS</a></li>
+                       <li><a href="#">•LONGUES</a></li>
+                       <li><a href="#">•COURTES</a></li>
+                       <li><a href="#">•EN CONTINUE</a></li>
+                       <li><a href="#">•MODULES A LA CARTE</a></li>
+                       <li><a href="#">ESPACE ENTREPRISE</a></li>
+                   </ul>
+               </nav>
+           </section><!--
 
-        --><section>
-            <nav>
-                <ul>
-                    <li><a href="#">FORMATIONS</a></li>
-                    <li><a href="#">•LONGUES</a></li>
-                    <li><a href="#">•COURTES</a></li>
-                    <li><a href="#">•EN CONTINUE</a></li>
-                    <li><a href="#">•MODULES A LA CARTE</a></li>
-                    <li><a href="#">ESPACE ENTREPRISE</a></li>
-                </ul>
-            </nav>
-        </section><!--
+           --><section>
+<!--        <nav>
+                    <ul>
+                        <li><a href="#">NEWSLETTER</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">PLAN DU SITE</a></li>
+                        <li><a href="#">GOOGLE MAP</a></li>
 
-        --><section>
-            <nav>
-                <ul>
-                    <li><a href="#">NEWSLETTER</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">PLAN DU SITE</a></li>
-                    <li><a href="#">GOOGLE MAP</a></li>
+                    </ul>
+                </nav>
+            </section><!--
 
-                </ul>
-            </nav>
-        </section><!--
-
-        --><section>
-            <p>LES FORMATIONS D'ISSOUDUN<br>
+            --><section>
+<!--        <p>LES FORMATIONS D'ISSOUDUN<br>
                 PIAF rue du Bât le Tan<br>
                 36100 ISSOUDUN</p>
             <p>Tel : 02 52 03 16 26</p>

@@ -19,10 +19,10 @@
 @section('main_container')
     <!-- /page content -->
     <!-- MASTER FORMATION -->
-    <section id="masterform" class="col-md-12">
-        <div class="content" class="col-md-10">
+    <section id="masterform">
+        <div class="content" >
             <!-- FILTRES -->
-            <section class="filtre col-md-12">
+            <section class="">
                 <div class="col-md-4">
                     <p class="titre">LES<br>FORMATIONS</p>
                 </div>

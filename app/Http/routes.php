@@ -24,7 +24,6 @@ Route::get('production', 'FrontController@showProduction');
 Route::get('article/{id}', 'FrontController@showArticle');
 
 
-
 Route::any('login', 'LoginController@login');
 
 Route::any('logout', 'LoginController@logout');
@@ -33,6 +32,9 @@ Route::any('logout', 'LoginController@logout');
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
     Route::resource('article', 'ArticleController');
+
+    Route::get('getarticle', 'ArticleController@createArticle');
+
     Route::resource('publish', 'PublishController');
 
     Route::resource('index', 'BackController');

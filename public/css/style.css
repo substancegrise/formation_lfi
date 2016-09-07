@@ -546,7 +546,7 @@ div{
     padding-bottom: 0px;
     padding-top: 0px;
     position: relative;
-    height: 800px;
+    height: 700px;
     margin-bottom: 0px;
     text-align: center;
     vertical-align: bottom;
@@ -556,6 +556,7 @@ div{
 
 .cdrtrema{
 	display: flex;
+	margin-top: 6%;
 }
 
 /*--VISU--*/
@@ -634,7 +635,7 @@ div{
 
 #trematxt div:nth-child(n+2){
 	display: block;
-	color: green;
+	color: black;
 }
 
 #trematxt > div{
@@ -649,6 +650,7 @@ div{
     /* position: absolute; */
     z-index: 600;
     position: absolute;
+    padding: 38px;
 }
 
 #containtrema{
@@ -875,10 +877,9 @@ div{
 }
 
 .boutonsend{
-	margin-left: 64%;
+	margin-left: 66%;
     margin-top: 4%;
 	padding:6px 0 6px 0;
-	font:bold 13px Arial;
 	background:#f5f5f5;
 	color:#555;
 	border-radius:2px;
@@ -969,6 +970,179 @@ div{
 	display: inline-block;
 }
 
+/*------ PRODUCTIONS ----------------------------------------------------------------------------------------------------------*/
+
+/*------ ----------------------------*/
+
+#masterprod{
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/photos/img_top.jpg");
+    background-position: top;
+    height: 800px;
+}
+#masterprod p {
+   font-family: 'latolight';
+   color:black;
+}
+#masterprod .backwhite{
+    background-color: white;
+    margin-top: 28px;
+
+}
+.bigtitreprod{
+    padding-top: 246px;
+    text-align: center;
+
+}
+
+.bigtitreprod h1{
+    background-color: red;
+    font-size: 32px;
+    font-family: 'melbourneregular';
+    color: white;
+
+}
+
+.mediumtitreprod{
+    margin-top: 38px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
+.smalltitreprod{
+    margin-top: 18px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+
+}
+
+.titrepro1{
+
+    font-size: 24px;
+    color: red;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 42px;
+    margin-top: 72px;
+
+}
+
+.titrepro2{
+
+    color: white;
+    font-size: 18px;
+    background-color: red;
+    margin-bottom: 6px;
+    text-align: left;
+    padding-left: 52px;
+    margin-left: -10px;
+
+}
+
+.txtpresprod{
+    font-size: 16px;
+    text-align: justify;
+    text-justify: newspaper;
+    margin-right: 59px;
+    line-height: 28px;
+    margin-top: 66px;
+    margin-bottom: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.cadrecolone{
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+.pied{
+    margin-bottom: 44px;
+}
+
+.tetemedium{
+        margin-top: 64px;
+}
+
+.txtmodula{
+    line-height: 28px;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: newspaper;
+    padding-left: 10px;
+}
+
+
+
+.colone h3{
+    background-color: red;
+    font-size: 16px;
+    color:white;
+    text-transform : uppercase;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.colone p{
+    font-size: 16px;
+    text-align: left;
+    line-height: 28px;
+
+}
+
+#progbrique{
+    margin-top: 22px;
+    font-size: 16px;
+    font-family: 'latolight';
+    text-align: left;
+    line-height: 28px;
+}
+
+
+
+
+.brique h4{
+    background-color: red;
+    font-size: 22px;
+    color:white;
+    margin-bottom: 20px
+
+}
+.brique h5{
+    background-color: red;
+    font-size: 18px;
+    color:white;
+    font-family: 'latolight';
+
+
+}
+
+.titrepro3{
+
+    font-size: 24px;
+    color: red;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 42px;
+    margin-top: 37px;
+
+}
+
+.txtmodula2{
+    margin-top: 40px;
+    line-height: 28px;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: newspaper;
+    padding-left: 10px;
+}
+#progbrique p{
+
+}
+
 /*------ FOOTER ----------------------------*/
 
 footer{
@@ -981,6 +1155,7 @@ footer{
     box-sizing: border-box;
     font-family: 'latolight';
     font-size: 13px;
+    margin-top: 4%;
 
 }
 footer li img{
@@ -996,6 +1171,10 @@ footer li{
 }
 footer #sociaux li{
     display: inline-block;
+    margin-left: -66px;
+    padding-top: 2%;
+    padding-bottom: 3%;
+
 }
 
 footer section{

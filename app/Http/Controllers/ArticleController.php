@@ -37,6 +37,7 @@ class ArticleController extends Controller
         return view('admin.create', compact('articles_categories'));
     }
 
+
     /**
      * Store a newly created resource in storage.
      *
@@ -44,7 +45,7 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    { dd($request);
         $article = Article::create($request->all());
 
 
@@ -78,6 +79,13 @@ class ArticleController extends Controller
             ->with(['message' => 'votre article à bien été ajouté']);
     }
 
+
+    public function createArticle()
+    {
+        $articles_categories = Article_categorie::lists('titre', 'id');
+
+        return view('admin.article.article', compact('articles_categories'));
+    }
     /**
      * Display the specified resource.
      *

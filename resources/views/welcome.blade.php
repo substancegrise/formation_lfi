@@ -150,13 +150,15 @@
                                 </div>
                             </div>
                         </div>
+                    </section>
+                    <section class="col-md-12 col-xs-8">
+                    <div class="col-md-2 col-xs-8 detailsujet">
+                        <p class="buttdetail" >PLUS DE DETAIL</p>
                         <div>
                             <img src="">
                         </div>
-                    </section>
-                    <div>
-                        <p>PLUS DE DETAIL</p>
                     </div>
+                    </section>
                 </div>
             </section>
             <section id="actus">
@@ -182,7 +184,8 @@
                                         </div>
                                         <!-- date -->
                                         <div id="date">
-                                            <p>{{$article->date_event}}</p>
+                                            <?php $date = explode("-",$article->date_event);?>
+                                            <p>{{$date[0]."/".$date[1]}}</p>
                                         </div>
                                     </div>
                                     <div id="titledesc">
