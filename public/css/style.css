@@ -963,11 +963,170 @@ div{
 }
 
 #filtre{
-	padding-top: 18%;
+
+	padding-top: 148px;
+    vertical-align: middle;
+    margin-bottom: 65px;
 }
 
-#filtre div{
-	display: inline-block;
+#filtre :nth-child(n+2){
+    margin-top: 59px;
+}
+#regisseur{
+    margin-bottom: 10px
+
+}
+
+.fondblanc{
+    padding-left: 
+    height: 274px;
+    background-color: white;
+    height: 274px;
+}
+
+.txtcentrered{
+    background-color: red;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    font-family: 'melbourneregular';
+    margin-top: 92px;
+    margin-right: 10%;
+    margin-left: -3%;
+}
+.txtcentrered2{
+    background-color: red;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    font-family: 'melbourneregular';
+    margin-top: 4px;
+    margin-right: 10%;
+    margin-left: -3%;
+}
+.txtmiddlered{
+    text-transform: uppercase;
+    text-align: left;
+    color: red;
+    font-size: 18px;
+    font-family: 'melbourneregular';
+    margin-top: 27px;
+}
+
+.txtmiddlered3{
+    text-align: left;
+    color: white;
+    background-color: red;
+    font-size: 14px;
+    font-family: 'latoregular';
+    margin-bottom: 2px;
+    margin-left: -20px;
+    padding-left: 20px;
+}
+
+.letexte{
+    color:black;
+    font-family: 'latoregular';
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+    text-justify: newspaper;
+    margin-top: 35px;
+}
+.espaceformcadre{
+    margin-bottom: 30px;
+}
+/*-----BOUTON DANS CADRE BLANC HAUT ET DROIT-----*/
+
+.buttttt{
+    font-family: 'latoregular';
+    border-right:1px solid #a6a6a6;
+    margin-top: 13px;
+}
+
+.buttttt3{
+
+    margin-top: 29px;
+}
+
+.buttttt4{
+
+    margin-top: 48px;
+}
+.buttttt :nth-child(-n+2){
+    font-size: 18px;
+    color: #a6a6a6;
+}
+
+.buttttt :nth-child(3){
+    font-size: 12px;
+    color: #a6a6a6;
+}
+
+
+
+
+/*-----background img-----*/
+
+#prod{
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/photos/charge_prod.jpg");
+    height: 274px;
+    padding-right: 1%;
+    margin-right: -3%;
+   
+}
+#regis{
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/photos/regisseur.jpg");
+    height: 274px;
+    padding-right: 1%;
+    margin-right: -3%;
+   
+}
+#prod{
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/photos/charge_prod.jpg");
+    height: 274px;
+    padding-right: 1%;
+    margin-right: -3%;
+   
+}
+#prod{
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/photos/charge_prod.jpg");
+    height: 274px;
+    padding-right: 1%;
+    margin-right: -3%;
+   
+}
+#prod{
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/photos/charge_prod.jpg");
+    height: 274px;
+    padding-right: 1%;
+    margin-right: -3%;
+   
+}
+#prod{
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/photos/charge_prod.jpg");
+    height: 274px;
+   
+}
+#prod{
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/photos/charge_prod.jpg");
+    height: 274px;
+   
+}
+#prod{
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/photos/charge_prod.jpg");
+    height: 274px;
+   
 }
 
 /*------ PRODUCTIONS ----------------------------------------------------------------------------------------------------------*/
@@ -983,6 +1142,10 @@ div{
 #masterprod p {
    font-family: 'latolight';
    color:black;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 38px;
+
 }
 #masterprod .backwhite{
     background-color: white;
@@ -1102,8 +1265,6 @@ div{
 }
 
 
-
-
 .brique h4{
     background-color: red;
     font-size: 22px;
@@ -1111,6 +1272,8 @@ div{
     margin-bottom: 20px
 
 }
+
+
 .brique h5{
     background-color: red;
     font-size: 18px;
@@ -1139,9 +1302,56 @@ div{
     text-justify: newspaper;
     padding-left: 10px;
 }
-#progbrique p{
+
+#progbrique h6{
+    line-height: 28px;
+    color:black;
+    font-size: 16px;
+    font-family: 'latoregular';
+    margin-bottom: 37px;
 
 }
+
+#financement{
+    margin-top: 24px;
+    background-color: white;
+    padding-bottom: 44px;
+
+}
+
+.titrecentre{
+    font-size: 22px;
+     font-family: 'melbourneregular';
+    background-color: red;
+    color:white;
+    text-align: center;
+    padding-top:4px ;
+    padding-bottom:4px;
+    margin-bottom: 60px;
+
+}
+
+#financement h3{
+    font-size: 18px;
+    font-family: 'melbourneregular';
+    background-color: red;
+    color:white;
+    text-align: left;
+    margin-bottom: 1px;
+
+}
+
+.parafinanc{
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'latoregular';
+    color:black;
+    margin-top: 30px;
+}
+
+
+
 
 /*------ FOOTER ----------------------------*/
 
@@ -1200,7 +1410,11 @@ footer a{
 /*------ FORMULAIRE ROUGE----------------------------*/
 
 .closeform{
-	color: white;
+	   color: white;
+    margin-top: 181px;
+    padding-left: 89%;
+    position: absolute;
+    z-index: 3;
 }
 
 #butskiky{
@@ -1243,3 +1457,74 @@ footer a{
 	transition:width 1s, height 1s;
 }
 
+#formredbaby{
+    position: fixed;
+    z-index: 1;
+    margin-left: 22%;
+    padding-top: 15%;
+}
+
+
+*------ FORMULAIRE CARTOGRAPHIE----------------------------*/
+
+.closeformwhite{
+       color: white;
+    margin-top: 181px;
+    padding-left: 89%;
+    position: absolute;
+    z-index: 3;
+}
+
+#buttwhite{
+    position: fixed;
+    left: 10px;
+    bottom:30%;
+}
+
+.formwhite::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    display: block;
+    width: 300%;
+    height: 200%;
+    top: 0%;
+    left: -94%;
+    transform: rotate(42deg);
+
+}
+
+.formwhite{
+
+    width: 0%;
+    height:0%;
+    position: fixed;
+    bottom:0%;
+    left: 0%;
+    z-index: 2000;
+    -webkit-transition:width 2s, height 2s;
+    transition:width 2s, height 2s;
+
+}
+
+.animformwhite{
+
+    width: 100%;
+    height:100%;
+    -webkit-transition:width 1s, height 1s;
+    transition:width 1s, height 1s;
+}
+
+#formwhitebaby{
+    position: fixed;
+    z-index: 1;
+    margin-left: 22%;
+    padding-top: 15%;
+}
+#cartographie{
+    position:absolute;
+    z-index: 4;
+    width: 1300px;
+    height: 600px;
+    vertical-align: -webkit-baseline-middle;
+}

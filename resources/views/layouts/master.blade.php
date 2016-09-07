@@ -70,7 +70,7 @@
     </header>
     @yield('main_container')
 </div>
-<!--
+
 <footer>
     <div class="content">
         <div>
@@ -96,9 +96,9 @@
                 </ul>
             </nav>
         </section><!--
-<!--
-<!-       --><section>
-<!--           <nav>
+
+       --><section>
+           <nav>
                    <ul>
                        <li><a href="#">FORMATIONS</a></li>
                        <li><a href="#">•LONGUES</a></li>
@@ -111,7 +111,7 @@
            </section><!--
 
            --><section>
-<!--        <nav>
+        <nav>
                     <ul>
                         <li><a href="#">NEWSLETTER</a></li>
                         <li><a href="#">FAQ</a></li>
@@ -123,8 +123,7 @@
                 </nav>
             </section><!--
 
-            --><section>
-<!--        <p>LES FORMATIONS D'ISSOUDUN<br>
+            --><section><p>LES FORMATIONS D'ISSOUDUN<br>
                 PIAF rue du Bât le Tan<br>
                 36100 ISSOUDUN</p>
             <p>Tel : 02 52 03 16 26</p>
@@ -135,9 +134,77 @@
 </footer>
 <div class="formred">
     <div class="closeform">x</div>
-
-
+    <section id="formredbaby">
+    <section id="formulaire"  >
+        <div class="content">
+            <div class="middle">
+                <form method="POST" enctype="multipart/form-data" class="form-group">
+                    <section id="formleft" class="col-md-4">
+                        <div>
+                            <h5>NOUS<br>CONTACTER</h5>
+                        </div>
+                        <div>
+                            <p>Afin de mieux répondre à vos attentes, merci de remplir le formulaire
+                                ci-contre.</p>
+                        </div>
+                    </section>
+                    <section id="formcenter" class="col-md-4">
+                        <div id="test">
+                            <input class="select2_single form-control" type="text" id="name" name="name"
+                                   required="required" placeholder="NAME" class="">
+                        </div>
+                        <div>
+                            <input class="select2_single form-control" type="text" id="prenom" name="prenom"
+                                   required="required" placeholder="PRENOM" class="">
+                        </div>
+                        <div>
+                            <input class="select2_single form-control" type="email" id="email" name="email"
+                                   required="required" placeholder="EMAIL" class="">
+                        </div>
+                        <div>
+                            <select class="select2_single form-control" tabindex="-1">
+                                <option>VOUS ÊTES</option>
+                                <option>UN ETUDIANT</option>
+                                <option>UN PARTICULIER</option>
+                                <option>UNE ENTREPRISE</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section id="formright" class="col-md-4">
+                        <div>
+                            <div>
+                                <select class="select2_single form-control" tabindex="-1">
+                                    <option>SUJET</option>
+                                    <option>DEMANDE D'INFORMATION</option>
+                                    <option>PRISE DE CONTACT</option>
+                                    <option>DEMANDE DE RENDEZ-VOUS</option>
+                                    <option>SUIVI DE DOSSIER</option>
+                                    <option>AUTRE</option>
+                                </select>
+                            </div>
+                            <div>
+                                        <textarea class="date-picker form-control col-md-7 col-xs-12" type="text"
+                                                  id="message" name="message" required="required" placeholder="MESSAGE"
+                                                  rows="6"></textarea>
+                            </div>
+                            <div>
+                                <button id="send" type="submit" class="boutonsend">ENVOYER</button>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+            </div>
+            <div id="cookie">
+                <p>
+                    Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous
+                    bénéficiez d'un droit d'accès et de rectification aux informations qui vous concernent
+                </p>
+            </div>
+        </div>
+    </section>
 </div>
+
+
 <div id="butskiky">
     <ul>
         <li class="openform">FORM</li>
@@ -145,23 +212,53 @@
     </ul>
 </div>
 
+
+<!--- CARTOGRAPHIE---->
+
+<div class="formwhite">
+    <div class="closeformwhite">XXXXXX</div>
+    <div id="cartograhie">
+        <img src="../public/assets/images/catographie/DEMO_cartographie10.swf">
+    </div>
+
+</div>
+
+
+<div id="buttwhite">
+    <ul>
+        <li class="openformwhite">WHITE</li>
+        <li><a></a></li>
+    </ul>
+</div>
+
+
+
+
 <script type="text/javascript" src="{{ asset("js/skrollr.min.js") }}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset("js/jquery-1.12.2.min.js") }}" rel="stylesheet"></script>
 <script type="text/javascript">
     var s = skrollr.init();
 </script>
 <script>
 
     $(document).ready(function () {
-
+        // form red anim
         $(".openform").on("click", function () {
             $('.formred').addClass('animform');
         });
 
         $(".closeform").on("click", function () {
             $('.formred').removeClass('animform');
+        });
+        // form white anim
+        $(".openformwhite").on("click", function () {
+            $('.formwhite').addClass('animformwhite');
+        });
+
+        $(".closeform").on("click", function () {
+            $('.formwhite').removeClass('animformwhite');
         });
     });
 

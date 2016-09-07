@@ -213,8 +213,8 @@
 
             <div id="progbrique" class="brique backwhite">
 
-                <div>
-                    <h4>PROGRAMME</h4>
+                <div class="briquebis">
+                    <h4 class="briquebis">PROGRAMME</h4>
                 </div>
 
                 <section>
@@ -236,21 +236,21 @@
                         <div>
                             <h2 class="titrepro3">MODULES GENERAUX</h2>
                             <h4>MGR1 – 105 heures</h4>
-                            <p>Connaissance des acteurs et des enjeux
+                            <h6>Connaissance des acteurs et des enjeux
                                 Identifier les acteurs des Musiques
                                 Actuelles, leurs enjeux et leurs interacation.
-                            </p>
+                            </h6>
                             <p>/ Comprendre le fonctionnement général de la production musicale en France
                                 / Identifier les métiers de la production, leurs spécificités et leurs interactions
                                 / Déduire les rôles et les interactions entre les différents acteurs</p>
                         </div>
                         <div>
                             <h4>MGR2 – 112 heures</h4>
-                            <p>Connaissance des acteurs et des enjeux
+                            <h6>Connaissance des acteurs et des enjeux
                                 Réglementation
                                 Exercer son activité dans un cadre
                                 réglementaire
-                            </p>
+                            </h6>
                             <p>/ Identifier les différents types de structures juridiques et choisir la plus adaptée
                                 pour développer
                                 son activité
@@ -263,8 +263,8 @@
                         </div>
                         <div>
                             <h4>MGR3 – 28 heures</h4>
-                            <p>Communication Élaborer un plan de communication en ciblant les médias pertinents
-                            </p>
+                            <h6>Communication Élaborer un plan de communication en ciblant les médias pertinents
+                            </h6>
                             <p>/ Identifier les différents médias
                                 / Élaborer un plan de communication en fonction de son activité (production
                                 discographique,
@@ -274,9 +274,9 @@
                         </div>
                         <div>
                             <h4>MGR4 – 21 heures</h4>
-                            <p>Connaissances musicales
+                            <h6>Connaissances musicales
                                 Analyser les caractéristiques artistiques d’une œuvre de Musiques Actuelles
-                            </p>
+                            </h6>
                             <p>/ Identifier les courants musicaux
                                 / Définir le style musical d’un projet artistique
                                 / Définir les influences musicales d’un projet
@@ -288,9 +288,10 @@
                         </div>
                         <div>
                             <h4>Encadrement – 49 heures </h4>
-                            <p>/ Accueillir, encadrer et accompagner
+                            <p>/ Accueillir, encadrer et accompagne
                                 les apprenants
                             </p>
+                            <h4>Stage pratique - 350 heures </h4>
                         </div>
                         <div>
                             <img src="assets/images/production/img_bas_gauche.jpg">
@@ -303,9 +304,9 @@
                         <div>
                             <h2 class="titrepro3">MODULES PROFESSIONNELS</h2>
                             <h4>MGR1 – 105 heures</h4>
-                            <p>Organisation d’événements
+                            <h6>Organisation d’événements
                                 Organiser un événement de Musiques Actuelles
-                            </p>
+                            </h6>
                             <p>
                                 / Élaborer un projet de concert de Musiques
                                 Actuelles
@@ -319,11 +320,11 @@
                             </p>
                             <div>
                                 <h4>MPP2 – 98 heures </h4>
-                                <p>Tourneur
+                                <h6>Tourneur
                                     Produire et vendre un projet de Musiques
                                     Actuelles
                                     Actuelles, leurs enjeux et leurs interacation.
-                                </p>
+                                </h6>
                                 <p>
                                     / Élaborer un projet de production de spectacle et en définir la stratégie de
                                     tournée
@@ -339,10 +340,10 @@
                             </div>
                             <div>
                                 <h4>MP3 – 98 heures</h4>
-                                <p>Musique enregistrée
+                                <h6>Musique enregistrée
                                     Produire et vendre un support
                                     de musique enregistrée
-                                </p>
+                                </h6>
                                 <p>
                                     / Élaborer une stratégie de commercialisation d’un projet de musique enregistrée
                                     / Élaborer et suivre le budget d’un support
@@ -361,9 +362,9 @@
                             </div>
                             <div>
                                 <h4>MPP4 – 35 heures </h4>
-                                <p>Editer et administrer des œuvres
+                                <h6>Editer et administrer des œuvres
                                     de Musiques Actuelles
-                                </p>
+                                </h6>
                                 <p>
                                     / Élaborer et développer une stratégie éditoriale (création de catalogue, objectifs
                                     commerciaux…)
@@ -377,10 +378,10 @@
                             </div>
                             <div>
                                 <h4>MPP5 – 91 heures</h4>
-                                <p>Méthodologie de projet
+                                <h6>Méthodologie de projet
                                     Concevoir un projet innovant
                                     de Musiques Actuelles sur un territoire
-                                </p>
+                                </h6>
                                 <p>
                                     / Analyser et positionner le projet
                                     / Définir et formaliser les orientations générales, les objectifs généraux et les
@@ -398,10 +399,10 @@
                             </div>
                             <div>
                                 <h4>MPP6 – 77 heures</h4>
-                                <p>Accompagnement d’artistes
+                                <h6>Accompagnement d’artistes
                                     Accompagner un projet artistique
                                     en développement
-                                </p>
+                                </h6>
                                 <p>
                                     / Effectuer l’état des lieux sur la situation du projet artistique
                                     / Analyser le projet d’un artiste ou d’un groupe
@@ -419,37 +420,40 @@
                     </section>
                 </div>
                 <span class="clearfix"></span>
-                <div>
+            </div>
+
+            <div id="financement" >
+                <!---FINANCEMENT-->
+                <div class="titrecentre">
                     <div><h4>SOLUTION DE FINANCEMENT</h4></div>
                 </div>
                 <section>
                     <div class="col-md-3">
 
                         <div>
-                            <h3>DEMANDEURS<br>
-                                D’EMPLOI
-                            </h3>
-                            <p>
+                            <h3>DEMANDEURS</h3>
+                            <h3>D’EMPLOI</h3>
+                            <p class="parafinanc">
                                 Le coût pédagogique de nos formations Chargé de production et Régisseur de production est intégralement pris en charge sur des fonds de la Région Centre Val de Loire.
                             </p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div>
-                            <h3>SALARIES ET<br>
-                                INTERMITTENTS
-                            </h3>
-                            <p>
+                            <h3>SALARIES ET</h3>
+                            <h3>INTERMITTENTS</h3>
+
+                            <p class="parafinanc">
                                 Vous pouvez mobiliser les dispositifs mis en œuvre par l’AFDAS : Compte Personnel de Formation (CPF), Congé Individuel de Formation (CIF) ou Période de Professionnalisation.
                             </p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div>
-                            <h3>SALARIES DES <br>
-                                AUTRES SECTEURS
-                            </h3>
-                            <p>
+                            <h3>SALARIES DES</h3>
+                            <h3>AUTRES SECTEURS</h3>
+
+                            <p class="parafinanc">
                                 Vous pouvez demander un financement auprès de votre OPACIF ou
                                 du FONGECIF.
                             </p>
@@ -457,10 +461,10 @@
                     </div>
                     <div class="col-md-3">
                         <div>
-                            <h3>AUTOFINANCER<br>
-                                UNE FORMATION
-                            </h3>
-                            <p>
+                            <h3>AUTOFINANCER</h3>
+                            <h3>UNE FORMATION</h3>
+
+                            <p class="parafinanc">
                                 Un rendez-vous
                                 approfondi sera
                                 organisé avec le
@@ -470,10 +474,10 @@
                     </div>
                     <span class="clearfix"></span>
 
-                </section>
-
+            </section>
 
             </div>
+
             <!-- content--->
 
             <span class="clearfix"></span>
