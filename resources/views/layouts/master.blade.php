@@ -24,8 +24,14 @@
 </head>
 <body>
 <div class="site_pusher">
-    <header id="head" >
-        <section class="loader">
+    <header id="head" data-0="opacity:0" data-700="opacity:1">
+        <div class="header_icon col-md-3">
+            <a  id="" href="">
+            <img id="logo" data-0="opacity:1" data-800="opacity:0" src="../public/assets/images/assets/logo_lifi_blanc.png"></a>
+            <img id="logo" data-0="opacity:0" data-800="opacity:1" src="../public/assets/images/assets/logo_lifi_noir.png"></a>
+        </div>
+        <div class="col-md-6" id="animwave">
+        <section  class="loader" data-0="opacity:0" data-300="opacity:1">
 
         <div>
                 <a href="#">
@@ -45,7 +51,7 @@
                 </a>
             </div>
             <div>
-                <menu data-0="opacity:0" data-900="opacity:1" id="mymenu" {{ (Request::is('production')||Request::is('pr')) ? ' class="blanc"' : "" }}>>
+                <menu id="mymenu" data-0="opacity:0" data-300="opacity:1" id="mymenu" {{ (Request::is('production')||Request::is('pr')) ? ' class="blanc"' : "" }}>
                     <ul>
                         <li {{ Request::is('/') ? ' class="active"' : "" }}><a href="{{url('/')}}">ACCUEIL</a></li>
                         <li><a href="{{url('/')}}">PRESENTATION</a></li>
@@ -55,18 +61,17 @@
                     </ul>
                 </menu>
             </div>
-            <div id="entreprise" data-0="color:rgb(255,255,255);" data-900="color:rgb(0,0,0,);">
-                <p>[ ESPACE ENTREPRISE ]</p>
-                <p><span class="glyphicons glyphicons-zoom-in"></span></p>
-                <a href=""><img  src="../public/assets/images/assets/loupe_white.png"></a>
-                <a href=""><img src="../public/assets/images/assets/sound_white.png"></a>
-            </div>
-            <!--ESPACE PRO EST RECHERCHE -->
-            <div>
-                <a class="header_icon" id="" href=""></a>
-                <img id="logo" src="../public/assets/images/assets/logo_lifi_blanc.png">
-            </div>
         </section>
+        </div>
+        <!--ESPACE PRO EST RECHERCHE -->
+        <div class="col-md-3">
+        <div id="entreprise" data-0="opacity:0" data-300="opacity:1">
+            <p class="col-md-8">[ ESPACE ENTREPRISE ]</p>
+            <p><span class="glyphicons glyphicons-zoom-in"></span></p>
+            <a href="" class="col-md-2"><img  src="../public/assets/images/assets/loupe_white.png"></a>
+            <a href="" class="col-md-2"><img src="../public/assets/images/assets/sound_white.png"></a>
+        </div>
+        </div>
     </header>
     @yield('main_container')
 </div>
@@ -74,7 +79,7 @@
 <footer>
     <div class="content">
         <div>
-            <p>SUIVEZ-NOUS SUR LES RÉSEAUX SOCIAUX</p>
+            <p id="follow">SUIVEZ-NOUS SUR LES RÉSEAUX SOCIAUX</p>
         </div>
         <div id="sociaux">
             <ul>
@@ -123,7 +128,7 @@
                 </nav>
             </section><!--
 
-            --><section><p>LES FORMATIONS D'ISSOUDUN<br>
+            --><section id="adresse"><p>LES FORMATIONS D'ISSOUDUN<br>
                 PIAF rue du Bât le Tan<br>
                 36100 ISSOUDUN</p>
             <p>Tel : 02 52 03 16 26</p>
@@ -132,10 +137,11 @@
         </section>
     </div>
 </footer>
+
 <div class="formred">
     <div class="closeform">x</div>
     <section id="formredbaby">
-    <section id="formulaire"  >
+    <section id="formulaire" >
         <div class="content">
             <div class="middle">
                 <form method="POST" enctype="multipart/form-data" class="form-group">
@@ -202,12 +208,21 @@
             </div>
         </div>
     </section>
+    </section>
 </div>
+
+
+
+<div id="butskiky2">
+    <a href="" ><img  class="picletter" src="../public/assets/images/def/pic_letter.png"></a>
+</div>
+
+
 
 
 <div id="butskiky">
     <ul>
-        <li class="openform">FORM</li>
+        <li class="openform"><a href="" ><img  class="picedit" src="../public/assets/images/def/pic_edit.png"></a></li>
         <li><a></a></li>
     </ul>
 </div>
@@ -216,9 +231,9 @@
 <!--- CARTOGRAPHIE---->
 
 <div class="formwhite">
-    <div class="closeformwhite">XXXXXX</div>
+    <div class="closeformwhite"></div>
     <div id="cartograhie">
-        <img src="../public/assets/images/catographie/DEMO_cartographie10.swf">
+        <img src="">
     </div>
 
 </div>
@@ -226,7 +241,7 @@
 
 <div id="buttwhite">
     <ul>
-        <li class="openformwhite">WHITE</li>
+        <li class="openformwhite"><a href="" ><img  class="piccarto" src="../public/assets/images/def/pic_carto.png"></a></li>
         <li><a></a></li>
     </ul>
 </div>
@@ -257,7 +272,7 @@
             $('.formwhite').addClass('animformwhite');
         });
 
-        $(".closeform").on("click", function () {
+        $(".closeformwhite").on("click", function () {
             $('.formwhite').removeClass('animformwhite');
         });
     });

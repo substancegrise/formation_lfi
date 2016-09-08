@@ -136,6 +136,13 @@ div{
 }
 
 /*------ MENU ----------------------------*/
+#animwave{
+        padding-top: 2.2%;
+}
+
+.header_icon{
+    margin-top: 2%;
+}
 
 /*--WAVE------*/
 
@@ -260,22 +267,25 @@ div{
 /*-- RESTE MENU------*/
 
 #head{
-    height: 150px;
+    height: 120px;
 	position: fixed;
-    top: 1%;
+    /*top: 1%;*/
     text-align: right;
 	max-height: 150px;
-	width: 95%;
+	width: 100%;
 	z-index: 10000;
 	overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
 	
 }
 
 #logo{
-	display: inline-block;
+
+    display: inline-block;
     margin-top: -2%;
     float: left;
-    margin-left: 7%;
+    position: absolute;
+    margin-left: -274px;
 
 }
 #logo img{
@@ -284,21 +294,22 @@ div{
 }
 
 #entreprise{
-    margin-top: -2%;
-    width: 20%;
-	float: right;
-	font-family: 'latolight';
-	font-size: 14px;
-	display: inline-block; /* pour le flottement des éléments*/
-	text-align: center;
-
+        color: black;
+    padding-top: 6%;
+    /* width: 20%; */
+    float: right;
+    font-family: 'latolight';
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
 }
+
 #entreprise a{
 
 	display: inline-block; /* pour le flottement des éléments*/
 }
 #entreprise p{
-
+        padding-top: 6%;
 	display: inline-block; /* pour le flottement des éléments*/
 
 
@@ -379,7 +390,7 @@ div{
     padding-bottom: 0px;
     padding-top: 0px;
     position: relative;
-    height: 800px;
+    height: 950px;
     margin-bottom: 0px;
     text-align: center;
     vertical-align: bottom;
@@ -388,22 +399,28 @@ div{
 }
 
 #mymenu{
-
-	font-size: 1.1rem;
+    color:black;
+	font-size: 14px;
     float: none;
     /*display: inline-block; /* pour le flottement des éléments*/
     text-align: center;
     bottom: 0;
     padding-top: 10px;
-    font-family: 'melbourneregular';
+        font-family: 'latolight'
 }
 
 
 #mymenu li{
+    
+    color:black;
 
-	margin:0 1%;
 }
 
+#mymenu a{
+    margin: 0 27px;
+    color:black;
+
+}
 
 .blackpointe{
 
@@ -434,13 +451,16 @@ div{
     font-size: 17px;
     font-family: 'latolight';
     line-height : 23px;
+    color:black;
 }
+
 #txt2{
     order: 3;
     width: 35%;
     font-size: 17px;
     font-family: 'latolight';
     line-height : 23px;
+    color:black;
 }
 
 .imgform{
@@ -461,7 +481,7 @@ div{
 
 .cadreform{
     width: 33.25%;
-    height: 204px;
+    height: 202px;
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
@@ -502,6 +522,17 @@ div{
     background-color: #e1261c;
 
 }
+.txtform4{
+    text-align: left;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    margin-top: 119px;
+    font-size: 21px;
+    font-family: 'melbourneregular';
+    background-color: #e1261c;
+
+}
 
 .formtype{
 	margin-top: 166px;
@@ -534,6 +565,8 @@ div{
     font-family: 'latoregular';
 }
 .buttdetail{
+     font-family: 'latoregular';
+    width: 137px;
 	color:black;
 	border:1px groove black;
 	padding: 5px 15px;
@@ -546,7 +579,7 @@ div{
     padding-bottom: 0px;
     padding-top: 0px;
     position: relative;
-    height: 700px;
+    height: 670px;
     margin-bottom: 0px;
     text-align: center;
     vertical-align: bottom;
@@ -666,7 +699,7 @@ div{
     padding-bottom: 0px;
     padding-top: 0px;
     position: relative;
-    height: 900px;
+    height: 880px;
     margin-bottom: 0px;
     text-align: center;
     vertical-align: bottom;
@@ -700,10 +733,11 @@ div{
 }
 /*--TYPE DATE--*/
 #typedate{
+        width: 20.9%;
 	z-index: 150;
 	position: absolute;
 	margin-top:50px;
-	padding-left: 20px;
+	/*padding-left: 20px;*/
 	color: white;
 	background-color: #e1261c;
 	font-family: 'melbourneregular';
@@ -717,6 +751,7 @@ div{
 }
 
 #type{
+    margin-right: 48%;
 	text-transform: uppercase;
 	display: inline-block;
 	text-align: left;
@@ -830,7 +865,7 @@ div{
     line-height: 30px;
     font-size: 16px;
     color: #a6a6a6;
-    font-family: 'latoregular';
+    font-family: 'latolight';
     text-align: justify;
     text-justify:newspaper;
 }
@@ -909,7 +944,7 @@ div{
     line-height: 30px;
     font-size: 16px;
     color: #a6a6a6;
-    font-family: 'latoregular';
+    font-family: 'latolight';
     text-align: justify;
     text-justify:newspaper;
 }
@@ -946,7 +981,7 @@ div{
 
 #cookie{
     font-size: 12px;
-    font-family: 'latoregular';
+    font-family: 'latolight';
     color: #a6a6a6;
 
 }
@@ -1355,6 +1390,18 @@ div{
 
 /*------ FOOTER ----------------------------*/
 
+#follow{
+    color:#a6a6a6;
+
+}
+
+#adresse{
+    color:#a6a6a6;
+    font-size: 13px;
+    font-family: 'latolight';
+    line-height: 17px;
+}
+
 footer{
     height: 302px;
     background-color: #f9f9f9;
@@ -1364,7 +1411,7 @@ footer{
     margin-bottom: 0px;
     box-sizing: border-box;
     font-family: 'latolight';
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 4%;
 
 }
@@ -1402,12 +1449,25 @@ footer section:nth-child(n+1){
 
 
 footer a{
-    color: #535353;
+    font-family: 'latolight';
+    color: #a6a6a6;
     line-height: 1.8em;
 
 }
 
 /*------ FORMULAIRE ROUGE----------------------------*/
+.picletter{
+     margin-right: 5px;
+    margin-top: 5px;
+
+}
+
+.picedit{
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
 
 .closeform{
 	   color: white;
@@ -1417,10 +1477,25 @@ footer a{
     z-index: 3;
 }
 
+#butskiky2{
+    border-radius: 2px;
+    position: fixed;
+    background-color: red;
+    height: 40px;
+    right: -1px;
+    bottom: 110px;
+    width: 40px;
+}
+
+
 #butskiky{
+    border-radius: 2px;
 	position: fixed;
-	right: 10px;
-	bottom:30%;
+    background-color: red;
+    height:40px;
+	right: -1px;
+	bottom:64px;
+    width: 40px;
 }
 
 .formred::after{
@@ -1468,7 +1543,7 @@ footer a{
 *------ FORMULAIRE CARTOGRAPHIE----------------------------*/
 
 .closeformwhite{
-       color: white;
+    color: white;
     margin-top: 181px;
     padding-left: 89%;
     position: absolute;
@@ -1476,9 +1551,19 @@ footer a{
 }
 
 #buttwhite{
+    border-radius: 2px;
     position: fixed;
-    left: 10px;
-    bottom:30%;
+    left: -1px;
+    bottom:64px;
+    background-color: red;
+    height:40px;
+    width: 40px;
+}
+
+.piccarto{
+    padding-left: 5px;
+    padding-top: 5px;
+
 }
 
 .formwhite::after{

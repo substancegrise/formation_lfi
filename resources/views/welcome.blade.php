@@ -45,58 +45,91 @@
                         </div>
                         <div id="txt2">
                             <p>(chargé de production, régisseur de production), une formation de backliner et des
-                                formations professionnalisantes…<a href="">[Lire la suite]</a></p>
+                                formations professionnalisantes…<br><a href="">[Lire la suite]</a></p>
                         </div>
                     </section>
                     <section class="imgform">
                         <article class="cadreform">
                             <div class="inner-box">
-                                <a href="" class="txtform1"><p>TECHNICIEN</p></a>
-                                <a href="" class="txtform2"><p>DE PLATEAU</p></a>
+                                <a href="" class="txtform1"><p>CHARGE</p></a>
+                                <a href="" class="txtform2"><p>DE PRODUCTION</p></a>
                                 <a href="" class="formtype">FORMATION LONGUE</a>
                                 <a href="" class="eyes"><img src="assets/images/formations/eyes.png"></a>
-                                <a href="" class="formvisu"><img src="assets/images/formations/imgpar3.jpg"></a>
+                                <a href="" class="formvisu"><img src="assets/images/def/format_1.jpg"></a>
+                            </div>
+                        </article><!--
+
+                        --><article class="cadreform">
+                            <div class="inner-box">
+                                <a href="" class="txtform1"><p>REGISSEUR</p></a>
+                                <a href="" class="txtform2"><p>DE PRODUCTION</p></a>
+                                <a href="" class="formtype">FORMATION LONGUE</a>
+                                <a href="" class="eyes"><img src="assets/images/formations/eyes.png"></a>
+                                <a href="" class="formvisu"><img src="assets/images/def/format_2.jpg"></a>
                             </div>
                         </article><!--
 
                         --><article class="cadreform">
                             <div class="inner-box">
                                 <a href="" class="txtform1"><p>TECHNICIEN</p></a>
-                                <a href="" class="txtform2"><p>DE PLATEAU</p></a>
+                                <a href="" class="txtform2"><p>BACKLINE</p></a>
                                 <a href="" class="formtype">FORMATION LONGUE</a>
                                 <a href="" class="eyes"><img src="assets/images/formations/eyes.png"></a>
-                                <a href="" class="formvisu"><img src="assets/images/formations/imgpar3.jpg"></a>
+                                <a href="" class="formvisu"><img src="assets/images/def/format_3.jpg"></a>
                             </div>
                         </article><!--
 
                         --><article class="cadreform">
                             <div class="inner-box">
-                                <a href="" class="txtform1"><p>TECHNICIEN</p></a>
-                                <a href="" class="txtform2"><p>DE PLATEAU</p></a>
-                                <a href="" class="txtform3"><p>TEXTE EN PLUS</p></a>
-                                <a href="" class="formtype">FORMATION LONGUE</a>
+                                <a href="" class="txtform1"><p>ORGANISATION</p></a>
+                                <a href="" class="txtform2"><p>DU MONDE</p></a>
+                                <a href="" class="txtform3"><p>DE LA MUSIQUE</p></a><a class="formtype">FORMATION COURTE</a>
                                 <a href="" class="eyes"><img src="assets/images/formations/eyes.png"></a>
-                                <a href="" class="formvisu"><img src="assets/images/formations/imgpar3.jpg"></a>
+                                <a href="" class="formvisu"><img src="assets/images/def/format_4.jpg"></a>
                             </div>
                         </article><!--
 
                         --><article class="cadreform">
                             <div class="inner-box">
-                                <a href="" class="txtform1"><p>TECHNICIEN</p></a>
-                                <a href="" class="txtform2"><p>DE PLATEAU</p></a>
-                                <a href="" class="txtform3"><p>REGISSEUR</p></a><a class="formtype">FORMATION LONGUE</a>
+                                <a href="" class="txtform1"><p>REGIE GENERALE</p></a>
+                                <a href="" class="txtform2"><p>DES MUSIQUES</p></a>
+                                <a href="" class="txtform3"><p>ACTUELLES</p></a>
+                                <a href="" class="formtype">FORMATION COURTE</a>
                                 <a href="" class="eyes"><img src="assets/images/formations/eyes.png"></a>
-                                <a href="" class="formvisu"><img src="assets/images/formations/imgpar3.jpg"></a>
+                                <a href="" class="formvisu"><img src="assets/images/def/format_5.jpg"></a>
+                            </div>
+                        </article><!--
+
+                         --><article class="cadreform">
+                            <div class="inner-box">
+                                <a href="" class="txtform1"><p>TECHNIQUE</p></a>
+                                <a href="" class="txtform2"><p>DE BOOKING</p></a>
+                                <a href="" class="formtype">FORMATION COURTE</a>
+                                <a href="" class="eyes"><img src="assets/images/formations/eyes.png"></a>
+                                <a href="" class="formvisu"><img src="assets/images/def/format_6.jpg"></a>
                             </div>
                         </article><!--
 
                         --><article class="cadreform">
                             <div class="inner-box">
-                                <a href="" class="txtform1"><p>TECHNICIEN</p></a>
-                                <a href="" class="txtform2"><p>DE PLATEAU</p></a>
-                                <a href="" class="formtype">FORMATION LONGUE</a>
+                                <a href="" class="txtform1"><p>SECURITE</p></a>
+                                <a href="" class="txtform2"><p>DES LIEUX</p></a>
+                                <a href="" class="txtform3"><p>DE SPECTACLES</p></a>
+                                <a href="" class="formtype">FORMATION COURTE</a>
                                 <a href="" class="eyes"><img src="assets/images/formations/eyes.png"></a>
-                                <a href="" class="formvisu"><img src="assets/images/formations/imgpar3.jpg"></a>
+                                <a href="" class="formvisu"><img src="assets/images/def/format_8.jpg"></a>
+                            </div>
+                        </article><!--
+
+                         --><article class="cadreform">
+                            <div class="inner-box">
+                                <a href="" class="txtform1"><p>PRODUIRE</p></a>
+                                <a href="" class="txtform2"><p>ET VENDRE</p></a>
+                                <a href="" class="txtform3"><p>UN SPECTACLE</p></a>
+                                <a href="" class="txtform4"><p>EN TOURNEE</p></a>
+                                <a href="" class="formtype">FORMATION CONTINUE</a>
+                                <a href="" class="eyes"><img src="assets/images/formations/eyes.png"></a>
+                                <a href="" class="formvisu"><img src="assets/images/def/format_7.jpg"></a>
                             </div>
                         </article><!--
 
@@ -106,7 +139,7 @@
                                 <a href="" class="txtform2"><p>DE PLATEAU</p></a>
                                 <a href="" class="formtype">FORMATION LONGUE</a>
                                 <a href="" class="eyes"><img src="assets/images/formations/eyes.png"></a>
-                                <a href="" class="formvisu"><img src="assets/images/formations/imgpar3.jpg"></a>
+                                <a href="" class="formvisu"><img src="assets/images/def/format_9.jpg"></a>
                             </div>
                         </article>
                     </section>
@@ -121,40 +154,19 @@
             <section id="trema">
                 <div class="content">
                     <img class="blackpointe" src="assets/images/assets/pointe_blanche.png">
-                    <section class="cdrtrema col-md-12 col-xs-12">
-                        <section id="tremavisu" class="col-md-4 col-xs-4">
-                            <img src="assets/images/trema/visu_trema.png">
-                            <div id="containtrema">
-                                <div class="titretrema">
-                                    <h2>LE<br>TrEMA LAB</h2>
-                                </div>
-                                <div>
-                                    <p class="txttrema1">TRAVAIL ET </p>
-                                    <p class="txttrema2">MUSIQUES</p>
-                                    <p class="txttrema3">ACTUELLES</p>
-                                </div>
-                            </div>
-                        </section>
-                        <div id="trematxt" class="col-md-8 col-xs-8">
-                            <div>
-                                <div><p>Un projet pédagogique ambitieux</p></div>
-                                <div><p>
-                                        L’analyse du travail réel en vue de la formation nous impose de relier les
-                                        moda-lités de formation aux usages professionnels qui en seront faits :
-                                        la digitalisation des ressources de formation se veut une réponse aux usages et
-                                        besoins du travail nomade, asynchrone et collaboratif devenu ordinaire dans le
-                                        monde de travail, notamment dans le milieu des musiques actuelles marqué par la
-                                        prédominance massive des TPE de moins de 5 salariés et du travail en mode
-                                        projet.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <section class="cdrtrema ">
+                        <img class="blackpointe" src="assets/images/def/visuel_trema_lab.png">
+
+
                     </section>
-                    <section class="col-md-12 col-xs-8">
-                    <div class="col-md-2 col-xs-8 detailsujet">
-                        <p class="buttdetail" >PLUS DE DETAIL</p>
-                        <div>
+                    <section>
+                        <div class="detailsujet">
+                            <a class="buttdetail" href="">PLUS DE DÉTAIL</a>
+                        </div>
+                        <div class="blackrow">
+                            <a href="#"><img src="assets/images/assets/next_black.png"></a>
+                        </div>
+
                             <img src="">
                         </div>
                     </div>
@@ -163,6 +175,7 @@
             </section>
             <section id="actus">
                 <div class="content">
+                    <img class="blackpointe" src="assets/images/assets/pointe_gris.png">
                     <div class="titreactus">
                         <h2>ACTUALITES / AGENDA / EVENEMENT</h2>
                     </div>
